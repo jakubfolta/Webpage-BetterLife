@@ -1,0 +1,11 @@
+{
+  "name": "webpage-betterlife",
+  "version": "1.0.0",
+  "description": "Example webpage for personal development company.",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files src/css/*.css *.html"
+  },
+  "author": "Jakub Folta",
+  "license": "ISC"
+}

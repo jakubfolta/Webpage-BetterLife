@@ -1,7 +1,7 @@
 # Better Life Webpage
 Example webpage for personal development company. 
 
-## Check Here ==> 
+## Check Here ==> https://jakubfolta.github.io/Webpage-BetterLife/
 
 ## Technologies
 * HTML5, CSS3, Sass, NPM, 

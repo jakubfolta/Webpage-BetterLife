@@ -5,10 +5,12 @@
   dgreen: hsl(159, 63%, 43%)
  */
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html { font-size: 62.5%; }
@@ -19,6 +21,8 @@ body {
   line-height: 1.7;
   color: hsl(0, 0%, 46%);
   padding: 3rem;
+
+  box-sizing: border-box;
 }
 
 .header {
@@ -33,17 +37,17 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -58,7 +62,7 @@ body {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -67,7 +71,7 @@ body {
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 600;
@@ -142,7 +146,7 @@ body {
   box-shadow: 0 .5rem 1rem hsla(0, 0%, 0%,.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: hsl(0, 100%, 100%);
   color: hsl(0, 0%, 46%)
 }
@@ -160,7 +164,7 @@ body {
   transition: all .4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: hsl(0, 100%, 100%);
 }
 
@@ -169,7 +173,7 @@ body {
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards;
 }

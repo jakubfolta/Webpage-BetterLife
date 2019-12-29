@@ -94,14 +94,14 @@ body {
   }
 }
 
-@keyframes moveInLeft {
+@keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(2rem);
+    transform: translateX(-2rem);
   }
 
   100% {

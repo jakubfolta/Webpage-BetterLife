@@ -10,6 +10,118 @@
 *::after {
   margin: 0;
   padding: 0;
+
+  box-sizing: inherit;
+}
+
+html { font-size: 62.5%; }
+
+body {
+  padding: 3rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 95vh;
+  background: linear-gradient(
+    to bottom right,
+    hsla(111, 54%, 63%, .8),
+    hsla(139, 49%, 55%, .8)),
+    url(../img/hero.jpg) center/cover;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.header__logo {
+  height: 5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: hsl(360, 100%, 100%);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 2rem;
+  font-weight: 400;
+  backface-visibility: hidden;
+
+  animation: moveInLeft 2s ease-in-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+
+
+
+
+
+/*
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
@@ -203,5 +315,5 @@ body {
 
 
 
-
+ */
 

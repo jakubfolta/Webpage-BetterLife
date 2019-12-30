@@ -4,7 +4,8 @@
   "description": "Example webpage for personal development company.",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files src/css/*.css *.html"
+    "start": "browser-sync start --server --files src/css/*.css *.html",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.css"
   },
   "author": "Jakub Folta",
   "license": "ISC",

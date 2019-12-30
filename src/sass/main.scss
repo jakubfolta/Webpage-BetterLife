@@ -3,6 +3,8 @@ $color-primary-light: hsl(111, 54%, 63%);
 $color-primary-dark: hsl(159, 63%, 43%);
 
 $color-grey-dark: hsl(0, 0%, 46%);
+$color-white: hsl(0, 100%, 100%);
+$color-black: hsl(0, 0%, 0%);
 
 *,
 *::before,
@@ -31,53 +33,54 @@ body {
     rgba($color-primary-light, .8),
     rgba($color-primary-dark, .8)),
     url(../img/hero.jpg) center/cover;
-    position: relative;
+  position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo {
-  height: 5rem;
-}
+  &__logo {
+    height: 5rem;
+  }
 
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
-  color: hsl(0, 100%, 100%);
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+
+    animation: moveInRight 1s ease-out;
+  }
 }
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 2rem;
-
-  animation: moveInLeft 1s ease-out;
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1rem;
-
-  animation: moveInRight 1s ease-out;
-}
 
 @keyframes moveInLeft {
   0% {
@@ -138,17 +141,17 @@ body {
 
 .btn:hover {
   transform: translateY(-.3rem);
-  box-shadow: 0 1rem 2rem hsla(0, 0%, 0%,.2);
+  box-shadow: 0 1rem 2rem rgba($color-black, .2);
 }
 
 .btn:active {
   transform: translateY(-.1rem);
-  box-shadow: 0 .5rem 1rem hsla(0, 0%, 0%,.2);
+  box-shadow: 0 .5rem 1rem rgba($color-black, .2);
 }
 
 .btn--white {
-  background-color: hsl(0, 100%, 100%);
-  color: hsl(0, 0%, 46%)
+  background-color: $color-white;
+  color: $color-grey-dark;
 }
 
 .btn::after {
@@ -165,7 +168,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: hsl(0, 100%, 100%);
+  background-color: $color-white;
 }
 
 .btn:hover::after {

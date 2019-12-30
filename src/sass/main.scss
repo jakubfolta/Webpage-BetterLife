@@ -2,6 +2,7 @@ $color-primary: hsl(139, 49%, 55%);
 $color-primary-light: hsl(111, 54%, 63%);
 $color-primary-dark: hsl(159, 63%, 43%);
 
+$color-grey-dark: hsl(0, 0%, 46%);
 
 *,
 *::before,
@@ -17,7 +18,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: hsl(0, 0%, 46%);
+  color: $color-grey-dark;
   padding: 3rem;
 
   box-sizing: border-box;

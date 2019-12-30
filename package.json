@@ -7,5 +7,8 @@
     "start": "browser-sync start --server --files src/css/*.css *.html"
   },
   "author": "Jakub Folta",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
 }

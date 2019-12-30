@@ -1,3 +1,4 @@
+// Colors
 $color-primary: hsl(139, 49%, 55%);
 $color-primary-light: hsl(111, 54%, 63%);
 $color-primary-dark: hsl(159, 63%, 43%);
@@ -5,3 +6,8 @@ $color-primary-dark: hsl(159, 63%, 43%);
 $color-grey-dark: hsl(0, 0%, 46%);
 $color-white: hsl(0, 100%, 100%);
 $color-black: hsl(0, 0%, 0%);
+
+// Grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

@@ -1,19 +1,44 @@
 .row {
   max-width: $grid-width;
-  background-color: darken($color-grey-dark, 70%);
+  background-color: darken($color-grey-dark, 60%);
   margin: 0 auto;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
+}
 
-  .col-1-of-2 {
-    width: calc((100% - #{$gutter-horizontal}) / 2);
-    background-color: orange;
-    float: left;
+.col-1-of-2 {
+  width: calc((100% - #{$gutter-horizontal}) / 2);
+  background-color: orange;
+  float: left;
 
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
   }
 }
+
+
+
+
+
+
+// .row {
+//   max-width: $grid-width;
+//   background-color: darken($color-grey-dark, 70%);
+//   margin: 0 auto;
+//
+//   &:not(:last-child) {
+//     margin-bottom: $gutter-vertical;
+//   }
+//
+//   .col-1-of-2 {
+//     width: calc((100% - #{$gutter-horizontal}) / 2);
+//     background-color: orange;
+//     float: left;
+//
+//     &:not(:last-child) {
+//       margin-right: $gutter-horizontal;
+//     }
+//   }
+// }

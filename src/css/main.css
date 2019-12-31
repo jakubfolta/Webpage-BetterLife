@@ -191,6 +191,18 @@ body {
     transform: scale(0.9);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.7);
+  border-radius: 3px; }
+  .feature-box__icon {
+    font-size: 6rem;
+    color: #54c478; }
+
 .header {
   height: 95vh;
   background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover;
@@ -245,3 +257,7 @@ body {
   background-color: whitesmoke;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/bet-3.jpg) center/cover; }

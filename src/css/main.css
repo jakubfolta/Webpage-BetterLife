@@ -198,10 +198,19 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.7);
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: all .2s; }
   .feature-box__icon {
     font-size: 6rem;
-    color: #54c478; }
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(to right, #7dd46e, #29b382);
+    -webkit-background-clip: text; }
+  .feature-box:hover {
+    transform: translateY(-0.3rem) scale(1.05);
+    box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.7); }
 
 .header {
   height: 95vh;

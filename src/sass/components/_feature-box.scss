@@ -7,9 +7,23 @@
   box-shadow: 0 1.5rem 2rem rgba($color-black, .7);
   border-radius: 3px;
 
+  transition: all .2s;
+
   &__icon {
     font-size: 6rem;
-    color: $color-primary;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+
+    color: transparent;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+  }
+
+  &:hover {
+    transform: translateY(-.3rem) scale(1.05);
+    box-shadow: 0 2.5rem 3rem rgba($color-black, .7);
+
   }
 
   &__text {

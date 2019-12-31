@@ -152,11 +152,43 @@ body {
   padding: .5rem .5rem;
   border-bottom: 1px solid #54c478;
   transition: all .5s; }
-  .btn-text:link:hover, .btn-text:visited:hover {
-    color: white;
-    background-color: #54c478;
-    transform: translateY(-0.5rem);
-    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.btn-text:hover {
+  color: white;
+  background-color: #54c478;
+  transform: translateY(-0.5rem);
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.btn-text:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0.3rem 0.7rem 1rem rgba(0, 0, 0, 0.3); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all .2s;
+    z-index: 100;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 25%;
+      top: 10rem; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
+      z-index: 101;
+      outline: 1.5rem solid #54c478; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
 
 .header {
   height: 95vh;

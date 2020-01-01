@@ -6,11 +6,16 @@
 
 .section-features {
   padding: 20rem 0;
+  margin-top: -7%;
   background: linear-gradient(
     to bottom right,
     rgba($color-primary-light, .8),
     rgba($color-primary-dark, .8)),
     url(../img/bet-3.jpg) center/cover;
 
-    transform: skewY(-7);
+    transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
 }

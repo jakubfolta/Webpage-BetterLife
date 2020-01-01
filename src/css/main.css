@@ -268,5 +268,8 @@ body {
 
 .section-features {
   padding: 20rem 0;
+  margin-top: -7%;
   background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/bet-3.jpg) center/cover;
-  transform: skewY(-7); }
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }

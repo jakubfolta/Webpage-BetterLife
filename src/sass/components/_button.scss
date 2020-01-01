@@ -71,11 +71,11 @@
     color: $color-white;
     background-color: $color-primary;
     transform: translateY(-.5rem);
-    box-shadow: .5rem 1rem 2rem rgba($color-black, .3);
+    box-shadow: .5rem 1rem 2rem $color-black-shadow;
   }
 
   &:active {
     transform: translateY(-.2rem);
-    box-shadow: .3rem .7rem 1rem rgba($color-black, .3);
+    box-shadow: .3rem .7rem 1rem $color-black-shadow;
   }
 }

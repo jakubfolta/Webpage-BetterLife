@@ -180,7 +180,7 @@ body {
       background-color: white;
       z-index: 100; }
     .card__side--back {
-      background-image: linear-gradient(to bottom right);
+      background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }

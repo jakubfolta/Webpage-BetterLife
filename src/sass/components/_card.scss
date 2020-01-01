@@ -19,7 +19,7 @@
     }
 
     &--back {
-      background-image: linear-gradient(to bottom right, ) ;
+      background-image: linear-gradient(to bottom right, $color-yellow, $color-orange);
       transform: rotateY(180deg);
     }
   }

@@ -163,6 +163,30 @@ body {
   transform: translateY(-0.2rem);
   box-shadow: 0.3rem 0.7rem 1rem rgba(0, 0, 0, 0.3); }
 
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    background-color: orange;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: white;
+      z-index: 100; }
+    .card__side--back {
+      background-image: linear-gradient(to bottom right);
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -210,10 +234,6 @@ body {
   .feature-box:hover {
     transform: translateY(-0.3rem) scale(1.05);
     box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.7); }
-
-.card {
-  background-color: oranged;
-  height: 50rem; }
 
 .header {
   height: 95vh;

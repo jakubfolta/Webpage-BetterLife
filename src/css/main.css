@@ -163,6 +163,16 @@ body {
   transform: translateY(-0.2rem);
   box-shadow: 0.3rem 0.7rem 1rem rgba(0, 0, 0, 0.3); }
 
+.card {
+  perspective: 150rem;
+  height: 50rem; }
+  .card__side {
+    transition: all .8s;
+    background-color: orange;
+    height: 50rem; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
+
 .composition {
   position: relative; }
   .composition__photo {

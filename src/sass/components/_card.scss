@@ -1,4 +1,25 @@
+.card {
+  perspective: 150rem;
+  height: 50rem;
 
+  &__side {
+    transition: all .8s;
+    background-color: orange;
+    height: 50rem;
+
+    &-front {
+
+    }
+
+    &-back {
+
+    }
+  }
+
+  &:hover &__side {
+    transform: rotateY(180deg);
+  }
+}
 
 
 

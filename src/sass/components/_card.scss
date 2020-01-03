@@ -32,7 +32,7 @@
   &:hover &__side--back { transform: rotateY(0deg); }
 
   &__picture {
-    height: 23rem;
+    height: 22rem;
     background-position: center;
     background-size: cover;
     background-blend-mode: saturation;
@@ -79,7 +79,7 @@
       font-weight: 300;
 
       &:not(:last-child) {
-        
+        border-bottom: .1rem solid $color-grey-light-2;
       }
     }
   }

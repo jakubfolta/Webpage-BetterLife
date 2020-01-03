@@ -189,7 +189,7 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
   .card__picture {
-    height: 23rem;
+    height: 22rem;
     background-position: center;
     background-size: cover;
     background-blend-mode: saturation;
@@ -221,6 +221,8 @@ body {
       padding: 1rem;
       font-size: 2rem;
       font-weight: 300; }
+      .card__list-item:not(:last-child) {
+        border-bottom: 0.1rem solid #d9d9d9; }
 
 .composition {
   position: relative; }

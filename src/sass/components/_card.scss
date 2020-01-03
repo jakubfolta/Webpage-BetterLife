@@ -3,11 +3,11 @@
   // FUNCTIONALITY
   perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
     background-color: orange;
-    height: 50rem;
+    height: 52rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -89,6 +89,24 @@
   }
 
   &__details {
+    padding: 3rem;
+  }
+
+  &__list {
+    width: 80%;
+    list-style: none;
+    margin: 0 auto;
+
+    &-item {
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-grey-light-2;
+      }
+
+    }
 
   }
 }

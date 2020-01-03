@@ -49,7 +49,8 @@ body {
 .heading-primary {
   color: white;
   text-transform: uppercase;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
@@ -109,7 +110,8 @@ body {
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -169,18 +171,18 @@ body {
   position: relative; }
   .card__side {
     transition: all .8s ease;
-    background-color: orange;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 52rem;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     overflow: hidden; }
     .card__side--front {
-      background-color: yellow; }
+      background-color: white; }
     .card__side--back {
       transform: rotateY(-180deg); }
       .card__side--back-1 {
@@ -198,9 +200,34 @@ body {
     background-position: center;
     background-size: cover;
     background-blend-mode: saturation;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
+  .card__heading {
+    font-size: 2.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 60%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to bottom right, rgba(41, 155, 255, 0.8), rgba(85, 67, 249, 0.8)); }
 
 .composition {
   position: relative; }

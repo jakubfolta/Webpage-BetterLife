@@ -5,7 +5,6 @@
 
   &__side {
     transition: all .8s ease;
-    background-color: orange;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,7 +15,7 @@
     border-radius: 3px;
     overflow: hidden;
 
-    &--front { background-color: yellow; }
+    &--front { background-color: $color-white; }
 
     &--back {
       transform: rotateY(-180deg);
@@ -47,21 +46,39 @@
 
     &--1 {
       background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg);
-
     }
 
     &--2 {
-
+      background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark), url(../img/cour-2.jpg);
     }
 
     &--3 {
-
+      background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark), url(../img/cour-3.jpg);
     }
   }
 
   &__heading {
-
+    font-size: 2.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 60%;
   }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+
+    &--1 { background-image: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8)); }
+    &--2 { background-image: linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)); }
+    &--3 { background-image: linear-gradient(to bottom right, rgba($color-tertiary-light, .8), rgba($color-tertiary-dark, .8)); }
+  }
+
+
 
   &__details {
 

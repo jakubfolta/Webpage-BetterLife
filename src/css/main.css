@@ -181,7 +181,7 @@ body {
     .card__side--front {
       background-color: white; }
     .card__side--back {
-      transform: rotateY(-180deg); }
+      transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to bottom right, #ffb700, #ff742e); }
       .card__side--back-2 {
@@ -189,7 +189,7 @@ body {
       .card__side--back-3 {
         background-image: linear-gradient(to bottom right, #299bff, #5543f9); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
   .card__picture {

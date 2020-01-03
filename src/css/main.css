@@ -164,12 +164,52 @@ body {
   box-shadow: 0.3rem 0.7rem 1rem rgba(0, 0, 0, 0.3); }
 
 .card {
+  position: relative;
   perspective: 150rem;
-  background-color: orange;
-  height: 50rem;
-  transition: all .8s ease; }
-  .card:hover {
+  height: 50rem; }
+  .card__side {
+    transition: all .8s ease;
+    height: 50rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    overflow: hidden; }
+    .card__side--front {
+      background-color: green; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to bottom right, #ffb700, #ff742e); }
+  .card:hover .card__side--front {
     transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__picture {
+    height: 23rem;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: saturation;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+  .card__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: right;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 12rem;
+    right: 1rem;
+    width: 65%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
 
 .composition {
   position: relative; }

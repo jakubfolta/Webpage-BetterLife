@@ -75,10 +75,11 @@
     position: absolute;
     top: 12rem;
     right: 2rem;
+    width: 75%;
   }
 
   &__heading-span {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 
     &--1 {
       background-image: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8));

@@ -214,9 +214,10 @@ body {
     text-transform: uppercase;
     position: absolute;
     top: 12rem;
-    right: 2rem; }
+    right: 2rem;
+    width: 75%; }
   .card__heading-span {
-    padding: 1rem; }
+    padding: 1rem 1.5rem; }
     .card__heading-span--1 {
       background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
 

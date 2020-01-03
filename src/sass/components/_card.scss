@@ -1,111 +1,13 @@
 .card {
   perspective: 150rem;
-  height: 54rem;
-  position: relative;
+  background-color: orange;
+  height: 50rem;
+  transition: all .8s ease;
 
-  &__side {
-    transition: all .8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 54rem;
-    backface-visibility: hidden;
-    box-shadow: 0 1rem 2rem $color-black-shadow;
-    border-radius: 3px;
-    overflow: hidden;
-
-    &--front { background-color: $color-white; }
-
-    &--back {
-      transform: rotateY(180deg);
-
-      &-1 {
-        background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
-      }
-
-      &-2 {
-        background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
-      }
-
-      &-3 {
-        background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
-      }
-    }
-  }
-
-  &:hover &__side--front { transform: rotateY(-180deg); }
-  &:hover &__side--back { transform: rotateY(0deg); }
-
-  &__picture {
-    height: 23rem;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: saturation;
-    clip-path:  polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
-    &--1 {
-      background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg);
-    }
-
-    &--2 {
-      background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark), url(../img/cour-2.jpg);
-    }
-
-    &--3 {
-      background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark), url(../img/cour-3.jpg);
-    }
-  }
-
-  &__heading {
-    font-size: 2.9rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: right;
-    color: $color-white;
-    position: absolute;
-    top: 12rem;
-    right: 2rem;
-    width: 60%;
-  }
-
-  &__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-
-    &--1 { background-image: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8)); }
-    &--2 { background-image: linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)); }
-    &--3 { background-image: linear-gradient(to bottom right, rgba($color-tertiary-light, .8), rgba($color-tertiary-dark, .8)); }
-  }
-
-
-
-  &__details {
-    padding: 2rem;
-  }
-
-  &__list {
-    width: 80%;
-    list-style: none;
-    margin: 0 auto;
-
-    &-item {
-      font-size: 2rem;
-      text-align: center;
-      padding: 1rem;
-
-      &:not(:last-child) {
-        border-bottom: 1px solid $color-grey-light-2;
-      }
-
-    }
+  &:hover {
+    transform: rotateY(-180deg);
   }
 }
-
-
-
-
-
 
 
 

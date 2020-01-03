@@ -165,13 +165,34 @@ body {
 
 .card {
   perspective: 150rem;
-  height: 50rem; }
+  height: 52rem;
+  position: relative; }
   .card__side {
-    transition: all .8s;
+    transition: all .8s ease;
     background-color: orange;
-    height: 50rem; }
-  .card:hover .card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52rem;
+    backface-visibility: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+    .card__side--front {
+      background-color: yellow; }
+    .card__side--back {
+      transform: rotateY(-180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to bottom right, #ffb700, #ff742e); }
+      .card__side--back-2 {
+        background-color: blue; }
+      .card__side--back-3 {
+        background-color: blue; }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__picture {
+    background-image: linear-gradient(to bottom right); }
 
 .composition {
   position: relative; }

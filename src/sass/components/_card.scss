@@ -1,112 +1,142 @@
-.card {
 
-  // FUNCTIONALITY
-  perspective: 150rem;
-  position: relative;
-  height: 52rem;
 
-  &__side {
-    background-color: orange;
-    height: 52rem;
-    transition: all .8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    box-shadow: 0 1rem 4rem $color-black-shadow;
-    overflow: hidden;
 
-    &--front { background-color: $color-white; }
 
-    &--back {
-      transform: rotateY(180deg);
 
-      &-1 {
-        background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
-      }
 
-      &-2 {
-        background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
-      }
 
-      &-2 {
-        background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
-      }
-    }
-  }
 
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
 
-  &:hover &__side--back {
-    transform: rotateY(0);
-  }
 
-  // FRONT SIDE STYLING
-  &__picture {
-    height: 23rem;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: saturation;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-    &--1 {
-      background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg);
-    }
-    &--2 {
-      background-image: url(../img/cour-2.jpg)
-    }
 
-    &--3 {
-      background-image: url(../img/cour-3.jpg)
-    }
-  }
 
-  &__heading {
-    color: $color-white;
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-align: right;
-    text-transform: uppercase;
-    position: absolute;
-    top: 12rem;
-    right: 2rem;
-    width: 75%;
-  }
 
-  &__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
 
-    &--1 {
-      background-image: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8));
-    }
-  }
 
-  &__details {
-    padding: 3rem;
-  }
 
-  &__list {
-    width: 80%;
-    list-style: none;
-    margin: 0 auto;
 
-    &-item {
-      font-size: 1.5rem;
-      padding: 1rem;
-      text-align: center;
 
-      &:not(:last-child) {
-        border-bottom: 1px solid $color-grey-light-2;
-      }
 
-    }
 
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+// .card {
+//
+//   // FUNCTIONALITY
+//   perspective: 150rem;
+//   position: relative;
+//   height: 52rem;
+//
+//   &__side {
+//     background-color: orange;
+//     height: 52rem;
+//     transition: all .8s ease;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     backface-visibility: hidden;
+//     border-radius: 3px;
+//     box-shadow: 0 1rem 4rem $color-black-shadow;
+//     overflow: hidden;
+//
+//     &--front { background-color: $color-white; }
+//
+//     &--back {
+//       transform: rotateY(180deg);
+//
+//       &-1 {
+//         background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
+//       }
+//
+//       &-2 {
+//         background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+//       }
+//
+//       &-2 {
+//         background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
+//       }
+//     }
+//   }
+//
+//   &:hover &__side--front {
+//     transform: rotateY(-180deg);
+//   }
+//
+//   &:hover &__side--back {
+//     transform: rotateY(0);
+//   }
+//
+//   // FRONT SIDE STYLING
+//   &__picture {
+//     height: 23rem;
+//     background-size: cover;
+//     background-position: center;
+//     background-blend-mode: saturation;
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+//     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+//
+//     &--1 {
+//       background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg);
+//     }
+//     &--2 {
+//       background-image: url(../img/cour-2.jpg)
+//     }
+//
+//     &--3 {
+//       background-image: url(../img/cour-3.jpg)
+//     }
+//   }
+//
+//   &__heading {
+//     color: $color-white;
+//     font-size: 2.8rem;
+//     font-weight: 300;
+//     text-align: right;
+//     text-transform: uppercase;
+//     position: absolute;
+//     top: 12rem;
+//     right: 2rem;
+//     width: 75%;
+//   }
+//
+//   &__heading-span {
+//     padding: 1rem 1.5rem;
+//     -webkit-box-decoration-break: clone;
+//     box-decoration-break: clone;
+//
+//     &--1 {
+//       background-image: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8));
+//     }
+//   }
+//
+//   &__details {
+//     padding: 3rem;
+//   }
+//
+//   &__list {
+//     width: 80%;
+//     list-style: none;
+//     margin: 0 auto;
+//
+//     &-item {
+//       font-size: 1.5rem;
+//       padding: 1rem;
+//       text-align: center;
+//
+//       &:not(:last-child) {
+//         border-bottom: 1px solid $color-grey-light-2;
+//       }
+//     }
+//   }
+// }

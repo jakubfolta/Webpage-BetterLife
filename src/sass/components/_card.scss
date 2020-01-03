@@ -13,6 +13,8 @@
     height: 52rem;
     backface-visibility: hidden;
     box-shadow: 0 1rem 2rem $color-black-shadow;
+    border-radius: 3px;
+    overflow: hidden;
 
     &--front { background-color: yellow; }
 
@@ -24,11 +26,11 @@
       }
 
       &-2 {
-        background-color: blue;
+        background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
       }
 
       &-3 {
-        background-color: blue;
+        background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
       }
     }
   }
@@ -37,7 +39,24 @@
   &:hover &__side--back { transform: rotateY(0deg); }
 
   &__picture {
-    background-image: linear-gradient(to bottom right);
+    height: 23rem;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: saturation;
+    clip-path:  polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg);
+
+    }
+
+    &--2 {
+
+    }
+
+    &--3 {
+
+    }
   }
 
   &__heading {

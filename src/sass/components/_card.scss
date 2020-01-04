@@ -31,17 +31,7 @@
   &:hover &__side--front { transform: rotateY(-180deg); }
   &:hover &__side--back { transform: rotateY(0deg); }
 
-  &__picture {
-    height: 22rem;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: saturation;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
-    &--1 { background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg) }
-    &--2 {  }
-    &--3 {  }
-  }
+  
 
   &__heading {
     font-size: 3rem;

@@ -31,7 +31,14 @@
   &:hover &__side--front { transform: rotateY(-180deg); }
   &:hover &__side--back { transform: rotateY(0deg); }
 
+  &__picture {
+    height: 22rem;
+    background-position: center;
   
+    &--1 { background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg) }
+    &--2 {  }
+    &--3 {  }
+  }
 
   &__heading {
     font-size: 3rem;

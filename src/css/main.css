@@ -217,6 +217,12 @@ body {
     margin: 0 auto;
     text-align: center;
     list-style: none; }
+    .card__list-item {
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: 300; }
+      .card__list-item:not(:last-child) {
+        border-bottom: 0.1rem solid #d9d9d9; }
 
 .composition {
   position: relative; }

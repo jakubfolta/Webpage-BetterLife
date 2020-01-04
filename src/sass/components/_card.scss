@@ -73,6 +73,15 @@
     text-align: center;
     list-style: none;
 
+    &-item {
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: 300;
+
+      &:not(:last-child) {
+        border-bottom: .1rem solid $color-grey-light-2;
+      }
+    }
   }
 }
 

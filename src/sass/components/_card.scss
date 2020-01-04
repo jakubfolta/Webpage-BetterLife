@@ -63,7 +63,17 @@
     &--3 {}
   }
 
-  
+  &__details {
+    padding: 1.8rem;
+  }
+
+  &__list {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+
+  }
 }
 
 

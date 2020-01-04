@@ -210,6 +210,13 @@ body {
     padding: 1rem 1.5rem; }
     .card__heading-span--1 {
       background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
+  .card__details {
+    padding: 1.8rem; }
+  .card__list {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none; }
 
 .composition {
   position: relative; }

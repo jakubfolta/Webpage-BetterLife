@@ -100,13 +100,16 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 3rem;
-  transition: all .2s;
+  transition: all .4s;
   position: relative;
   font-size: 1.6rem;
   backface-visibility: hidden; }
@@ -127,6 +130,12 @@ body {
   color: #757575; }
   .btn--white::after {
     background-color: white; }
+
+.btn--green {
+  background-color: #29b382;
+  color: white; }
+  .btn--green::after {
+    background-color: #29b382; }
 
 .btn::after {
   content: '';
@@ -163,6 +172,9 @@ body {
   transform: translateY(-0.2rem);
   box-shadow: 0.3rem 0.7rem 1rem rgba(0, 0, 0, 0.3); }
 
+.button {
+  text-align: center; }
+
 .card {
   position: relative;
   perspective: 150rem;
@@ -176,15 +188,18 @@ body {
     box-shadow: 0.4rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     overflow: hidden;
+    backface-visibility: hidden;
     transition: all .8s ease; }
     .card__side--front {
       background-color: white; }
-    .card__side--back-1 {
-      background-image: linear-gradient(to bottom right, #ffb700, #ff742e); }
-    .card__side--back-2 {
-      background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
-    .card__side--back-3 {
-      background-image: linear-gradient(to bottom right, #299bff, #5543f9); }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to bottom right, #ffb700, #ff742e); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to bottom right, #299bff, #5543f9); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -322,7 +337,7 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  .row:not(:last-child) {
+  .row:not(:last-of-type) {
     margin-bottom: 8rem; }
   .row::after {
     content: '';

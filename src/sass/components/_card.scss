@@ -13,7 +13,7 @@
     box-shadow: .4rem .5rem 2rem $color-black-shadow;
     border-radius: 3px;
     overflow: hidden;
-    // backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: all .8s ease;
 
     &--front {
@@ -21,7 +21,7 @@
     }
 
     &--back {
-      // transform: rotateY(180deg);
+      transform: rotateY(180deg);
 
       &-1 { background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark); }
       &-2 { background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark); }

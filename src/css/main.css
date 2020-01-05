@@ -165,16 +165,21 @@ body {
 
 .card {
   perspective: 150rem;
+  position: relative;
   height: 50rem; }
   .card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 50rem;
     font-size: 3.5rem;
     text-align: center;
     color: white;
+    backface-visibility: hidden;
     transition: all .8s ease; }
     .card__side--back {
       background-color: green;
-      transform: translateY(180deg); }
+      transform: rotateY(180deg); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {

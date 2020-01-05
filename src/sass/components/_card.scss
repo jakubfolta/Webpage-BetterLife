@@ -1,89 +1,29 @@
 .card {
-  position: relative;
-  perspective: 150rem;
-  height: 52rem;
+  height: 50rem;
+  background-color: green;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  transition: all .8s ease;
 
-  &__side {
-    transition: all .8s ease;
-    height: 52rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    box-shadow: .5rem .5rem 2rem $color-black-shadow;
-    overflow: hidden;
-
-    &--front {
-      background-color: $color-white;
-    }
-
-    &--back {
-      transform: rotateY(180deg);
-
-      &-1 { background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark); }
-      &-2 {  }
-      &-3 {  }
-    }
-  }
-
-  &:hover &__side--front { transform: rotateY(-180deg); }
-  &:hover &__side--back { transform: rotateY(0deg); }
-
-  &__picture {
-    height: 22rem;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: saturation;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
-    &--1 { background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/cour.jpg) }
-    &--2 {  }
-    &--3 {  }
-  }
-
-  &__heading {
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: right;
-    text-transform: uppercase;
-    color: $color-white;
-    position: absolute;
-    top: 12rem;
-    right: 1rem;
-    width: 65%;
-  }
-
-  &__heading-span {
-    padding: 1rem 1.5rem;
-
-    &--1 {background-image: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8)); }
-    &--2 {}
-    &--3 {}
-  }
-
-  &__details {
-    padding: 1.8rem;
-  }
-
-  &__list {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    list-style: none;
-
-    &-item {
-      padding: 1rem;
-      font-size: 2rem;
-      font-weight: 300;
-
-      &:not(:last-child) {
-        border-bottom: .1rem solid $color-grey-light-2;
-      }
-    }
+  &:hover {
+    transform: rotateY(-180deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

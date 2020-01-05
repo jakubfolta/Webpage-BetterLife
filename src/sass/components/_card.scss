@@ -116,19 +116,27 @@
 
   // BACK SIDE STYLING
   &__cta {
-    height: 50rem;
-    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
   }
 
   &__price-box {
-
+    margin-bottom: 8rem;
+    text-align: center;
+    color: $color-white;
   }
 
   &__price-only {
-
+    font-size: 1.8rem;
+    text-transform: uppercase;
   }
 
   &__price-value {
-
+    font-size: 6rem;
+    font-weight: 100;
   }
 }

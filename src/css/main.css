@@ -235,8 +235,22 @@ body {
       .card__list-item:not(:last-child) {
         border-bottom: 0.1rem solid #d9d9d9; }
   .card__cta {
-    height: 50rem;
-    padding: 1rem; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center; }
+  .card__price-box {
+    margin-bottom: 8rem;
+    text-align: center;
+    color: white; }
+  .card__price-only {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }

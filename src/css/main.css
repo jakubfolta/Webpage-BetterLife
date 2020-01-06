@@ -176,81 +176,93 @@ body {
   text-align: center; }
 
 .card {
+  position: relative;
   perspective: 150rem;
-  height: 50rem;
-  position: relative; }
+  height: 50rem; }
   .card__side {
-    width: 100%;
     height: 50rem;
-    transition: all .8s ease;
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
+    box-shadow: 0.4rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
     border-radius: 3px;
+    overflow: hidden;
     backface-visibility: hidden;
-    overflow: hidden; }
+    transition: all .8s ease; }
     .card__side--front {
       background-color: white; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to bottom right, #ffb700, #ff742e); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to bottom right, #299bff, #5543f9); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
   .card__picture {
     height: 22rem;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-blend-mode: saturation;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
   .card__heading {
+    text-align: right;
     width: 65%;
     position: absolute;
     top: 12rem;
-    right: 2rem;
-    text-align: right; }
+    right: 2rem; }
   .card__heading-span {
+    padding: 1rem 1.5rem;
     font-size: 3rem;
+    font-weight: 300;
     text-transform: uppercase;
     color: white;
-    padding: 1rem 1.5rem;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone; }
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to bottom right, rgba(41, 155, 255, 0.8), rgba(85, 67, 249, 0.8)); }
   .card__details {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem;
-    text-align: center; }
+    padding: 3rem; }
   .card__list {
     list-style: none;
-    padding: inherit; }
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
     .card__list-item {
       font-size: 1.6rem;
-      padding: inherit; }
+      padding: 1rem; }
       .card__list-item:not(:last-child) {
         border-bottom: 0.1rem solid #d9d9d9; }
   .card__cta {
     position: absolute;
-    width: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center; }
   .card__price-box {
-    text-align: center;
     margin-bottom: 8rem;
+    text-align: center;
     color: white; }
   .card__price-only {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 1rem; }
+    font-size: 1.8rem;
+    text-transform: uppercase; }
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }

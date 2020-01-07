@@ -8,4 +8,17 @@
   border-radius: .3rem;
   transform: skewX(-12deg);
 
+    & > * {
+      transform: skewX(12deg);
+    }
+
+    &__shape {
+      width: 15rem;
+      height: 15rem;
+      float: left;
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      transform: translateX(-3rem) skewX(12deg);
+    }
+  
 }

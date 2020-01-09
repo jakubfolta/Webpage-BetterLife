@@ -337,13 +337,15 @@ body {
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+    backface-visibility: hidden;
     position: relative; }
   .story__text {
     font-size: 1.6rem;
     backface-visibility: hidden; }
   .story__img {
     height: 100%;
-    transform: translateX(-3rem) scale(1.3); }
+    transform: translateX(-3rem) scale(1.3);
+    transition: all .8s; }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -359,7 +361,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
-    filter: sepia();
+    filter: brightness(80%);
     transform: translateX(-3rem) scale(1); }
 
 .header {

@@ -3,7 +3,7 @@
 
   &__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    box-shadow: 0 1.5rem 4rem $color-black-shadow;
     border-radius: 2px;
     position: absolute;
     transition: all .2s;
@@ -27,7 +27,7 @@
 
     &:hover {
       transform: scale(1.05) translateY(-1rem);
-      box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
+      box-shadow: 0 2.5rem 4rem $color-black-shadow;
       z-index: 101;
       outline: 1.5rem solid $color-primary;
     }
@@ -35,6 +35,6 @@
 
   &:hover &__photo:not(:hover) {
     transform: scale(.9);
-    box-shadow: 0 1rem 3rem rgba($color-black, .4);
+    box-shadow: 0 1rem 3rem $color-black-shadow;
   }
 }

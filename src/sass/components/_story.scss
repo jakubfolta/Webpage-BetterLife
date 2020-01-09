@@ -14,14 +14,15 @@
   }
 
   &__shape {
+    position: relative;
     width: 15rem;
     height: 15rem;
     float: left;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+    overflow: hidden;
     backface-visibility: hidden;
-    position: relative;
   }
 
   &__text {
@@ -31,6 +32,7 @@
 
   &__img {
     height: 100%;
+    backface-visibility: hidden;
     transform: translateX(-3rem) scale(1.3);
     transition: all .8s;
   }
@@ -45,7 +47,8 @@
     color: $color-white;
     text-align: center;
     opacity: 0;
-    transition: all .8s ease;
+    transition: all .8s;
+    backface-visibility: hidden;
   }
 
   &:hover &__caption {
@@ -54,7 +57,7 @@
   }
 
   &:hover &__img {
-    filter: brightness(80%);
     transform: translateX(-3rem) scale(1);
+    filter: blur(3px) brightness(90%);
   }
 }

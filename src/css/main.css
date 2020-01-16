@@ -343,6 +343,19 @@ body {
   backface-visibility: hidden; }
   .story > * {
     transform: skewX(12deg); }
+  .story__shape {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    overflow: hidden;
+    backface-visibility: hidden; }
+  .story__text {
+    font-size: 1.6rem;
+    backface-visibility: hidden; }
 
 .header {
   height: 95vh;

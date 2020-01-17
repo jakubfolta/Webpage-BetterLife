@@ -37,10 +37,19 @@
 }
 
 .book {
-  background-image: url(../img/bet-3.jpg);
+  background-image: linear-gradient(105deg,
+    rgba($color-white, .8) 0%,
+    rgba($color-white, .8) 50%,
+    transparent 50%),
+    url(../img/bet-3.jpg);
   background-size: cover;
 
   height: 50rem;
   border-radius: .3rem;
   box-shadow: .3rem .4rem .6rem $color-black-shadow;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
 }

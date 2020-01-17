@@ -456,3 +456,10 @@ body {
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
+
+.book {
+  background-image: url(../img/bet-3.jpg);
+  background-size: cover;
+  height: 50rem;
+  border-radius: .3rem;
+  box-shadow: 0.3rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3); }

@@ -34,5 +34,13 @@
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+}
 
+.book {
+  background-image: url(../img/bet-3.jpg);
+  background-size: cover;
+
+  height: 50rem;
+  border-radius: .3rem;
+  box-shadow: .3rem .4rem .6rem $color-black-shadow;
 }

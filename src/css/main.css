@@ -337,36 +337,37 @@ body {
   margin-bottom: 2rem; }
 
 .form__input {
+  font-size: 1.5rem;
   font-family: inherit;
-  font-size: 1.6rem;
-  width: 100%;
+  color: inherit;
   padding: 1.5rem 2rem;
-  border: none;
-  border-bottom: 3px solid transparent;
   border-radius: 0.3rem;
-  color: #595959;
-  transition: all .5s ease; }
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: .3rem solid transparent;
+  display: block;
+  width: 90%;
+  transition: all .3s ease; }
   .form__input::placeholder {
     color: #a6a6a6; }
   .form__input:focus {
     outline: none;
-    box-shadow: 3rem 4rem 6rem rgba(0, 0, 0, 0.3);
-    border-bottom: 3px solid #54c478; }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-bottom: 0.3rem solid #54c478; }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff742e; }
+    border-bottom: 0.3rem solid #ff742e; }
 
 .form__label {
-  display: block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  display: block;
   margin-top: .7rem;
   margin-left: 2rem;
-  opacity: 1;
   transition: all .5s ease; }
 
 .form__input:placeholder-shown + .form__label {
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
   transform: translateY(-4rem); }
 
 .form__radio-group {
@@ -374,7 +375,7 @@ body {
   width: 49%; }
 
 .form__radio-input {
-  display: none; }
+  -webkit-appearance: none; }
 
 .form__radio-label {
   font-size: 1.6rem;
@@ -384,26 +385,26 @@ body {
 
 .form__radio-button {
   display: inline-block;
-  height: 3rem;
   width: 3rem;
+  height: 3rem;
   border: 5px solid #54c478;
   border-radius: 50%;
   position: absolute;
-  top: -.7rem;
+  top: -.8rem;
   left: .5rem; }
   .form__radio-button::after {
     content: '';
     display: block;
-    width: 1.5rem;
     height: 1.5rem;
-    background-color: #54c478;
-    border-radius: 50%;
+    width: 1.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #54c478;
+    border-radius: 50%;
     opacity: 0;
-    transition: opacity .5s ease; }
+    transition: opacity .3s ease; }
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
@@ -536,7 +537,8 @@ body {
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../img/bet-3.jpg);
-  border-radius: 0.3rem;
+  background-size: cover;
+  border-radius: .3rem;
   box-shadow: 3rem 4rem 6rem rgba(0, 0, 0, 0.3); }
   .book__form {
     width: 50%;

@@ -345,8 +345,7 @@ body {
   border-bottom: 3px solid transparent;
   border-radius: 0.3rem;
   color: #595959;
-  transition: all .5s ease;
-  position: relative; }
+  transition: all .5s ease; }
   .form__input::placeholder {
     color: #a6a6a6; }
   .form__input:focus {
@@ -360,9 +359,14 @@ body {
   display: block;
   font-size: 1.3rem;
   font-weight: 700;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  margin-top: .7rem;
+  margin-left: 2rem;
+  opacity: 1;
+  transition: all .5s ease; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  transform: translateY(-4rem); }
 
 .story {
   width: 75%;

@@ -458,6 +458,45 @@ body {
     transform: translateX(-3rem) scale(1);
     filter: blur(3px) brightness(90%); }
 
+.footer {
+  background-color: #333333;
+  padding: 5rem 0;
+  font-size: 1.4rem;
+  color: whitesmoke; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 5rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    padding-top: 2rem;
+    border-top: 0.1rem solid #a6a6a6;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .3s ease;
+    backface-visibility: hidden; }
+  .footer__link:hover, .footer__link:active {
+    color: #54c478;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+    background-color: #333333;
+    transform: rotate(5deg) scale(1.4); }
+  .footer__copyright {
+    padding-top: 2rem;
+    border-top: 0.1rem solid #a6a6a6;
+    width: 85%;
+    float: right; }
+
 .header {
   height: 95vh;
   background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover;

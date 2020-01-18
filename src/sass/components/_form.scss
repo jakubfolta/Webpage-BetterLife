@@ -51,7 +51,7 @@
   }
 
   &__radio-input {
-
+    display: none;
   }
 
   &__radio-label {
@@ -82,9 +82,14 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity .5s ease;
     }
   }
 
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+  }
 }
 
 

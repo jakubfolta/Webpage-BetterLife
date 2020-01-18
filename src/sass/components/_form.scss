@@ -40,6 +40,7 @@
   }
 
   &__input:placeholder-shown + &__label {
+    visibility: hidden;
     opacity: 0;
     transform: translateY(-4rem);
   }
@@ -109,7 +110,7 @@
 
 
 
-
+//
 // .form {
 //   &__group:not(:last-child) {
 //     margin-bottom: 2rem;
@@ -152,12 +153,12 @@
 //     transition: all .5s ease;
 //   }
 //
-  // &__input:placeholder-shown + &__label {
-  //   opacity: 0;
-  //   visibility: hidden;
-  //   transform: translateY(-4rem);
-  // }
-//
+//   &__input:placeholder-shown + &__label {
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(-4rem);
+//   }
+
 //   &__radio-group {
 //     display: inline-block;
 //     width: 49%;

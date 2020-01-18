@@ -365,6 +365,7 @@ body {
   transition: all .5s ease; }
 
 .form__input:placeholder-shown + .form__label {
+  visibility: hidden;
   opacity: 0;
   transform: translateY(-4rem); }
 

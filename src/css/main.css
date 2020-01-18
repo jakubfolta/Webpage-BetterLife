@@ -369,6 +369,14 @@ body {
   opacity: 0;
   transform: translateY(-4rem); }
 
+.form__radio-group {
+  display: inline-block;
+  width: 49%; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer; }
+
 .story {
   width: 75%;
   padding: 6rem;

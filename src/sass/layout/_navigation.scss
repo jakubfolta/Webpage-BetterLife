@@ -12,6 +12,7 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
+    box-shadow: 1rem 2rem 4rem $color-black-shadow;
   }
 
   &__background {
@@ -25,8 +26,6 @@
     $color-primary-light,
     $color-primary-dark);
     z-index: 1000;
-
-    transform: scale(80); // For Development - Delete
   }
 
   &__nav {
@@ -36,20 +35,22 @@
     top: 0;
     right: 0;
     z-index: 1500;
+    visibility: hidden;
   }
 
   &__list {
     @include center-hor-ver;
-    // text-align: center;
     list-style: none;
   }
 
   &__item {
-    // display: inline-block;
     font-size: 3rem;
     font-weight: 300;
     color: $color-white;
-    margin: 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__link {

@@ -559,7 +559,8 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 2000; }
+  z-index: 2000;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.3); }
 
 .navigation__background {
   width: 6rem;
@@ -569,8 +570,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#7dd46e, #29b382);
-  z-index: 1000;
-  transform: scale(80); }
+  z-index: 1000; }
 
 .navigation__nav {
   height: 100vh;
@@ -578,7 +578,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1500; }
+  z-index: 1500;
+  visibility: hidden; }
 
 .navigation__list {
   position: absolute;
@@ -590,8 +591,9 @@ body {
 .navigation__item {
   font-size: 3rem;
   font-weight: 300;
-  color: white;
-  margin: 2rem; }
+  color: white; }
+  .navigation__item:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .navigation__link:link, .navigation__link:visited {
   color: inherit;

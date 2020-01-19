@@ -40,12 +40,12 @@
 
   &__list {
     @include center-hor-ver;
-    text-align: center;
+    // text-align: center;
     list-style: none;
   }
 
   &__item {
-    display: inline-block;
+    // display: inline-block;
     font-size: 3rem;
     font-weight: 300;
     color: $color-white;
@@ -68,14 +68,14 @@
       transparent 50%,
       $color-white 50%);
       background-size: 220%;
-      box-shadow: 1rem 2rem 5rem $color-black-shadow;
+      box-shadow: -1rem 2rem 5rem $color-black-shadow;
       transition: all .5s ease;
 
       &:hover {
         color: $color-primary;
         background-position: 100%;
-        transform: translateY(-.5rem);
-        box-shadow: 2rem 3rem 5rem $color-black-shadow;
+        transform: translate(1rem, -.5rem);
+        box-shadow: -2rem 3rem 5rem $color-black-shadow;
       }
 
       &:active {

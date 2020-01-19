@@ -569,7 +569,8 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#7dd46e, #29b382);
-  z-index: 1000; }
+  z-index: 1000;
+  transform: scale(80); }
 
 .navigation__nav {
   height: 100vh;
@@ -581,9 +582,21 @@ body {
 
 .navigation__list {
   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  list-style: none; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .section-about {
   background-color: whitesmoke;

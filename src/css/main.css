@@ -582,29 +582,40 @@ body {
 
 .navigation__list {
   position: absolute;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   list-style: none; }
 
 .navigation__item {
+  display: inline-block;
   font-size: 3rem;
   font-weight: 300;
   color: white;
-  margin: 1rem; }
+  margin: 2rem; }
 
 .navigation__link:link, .navigation__link:visited {
   color: inherit;
+  display: inline-block;
   padding: 1rem 2rem;
+  padding-top: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-  background-size: 100%;
-  background-position: 60%;
+  border-radius: 0.3rem;
+  background-image: linear-gradient(60deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 220%;
+  box-shadow: 1rem 2rem 5rem rgba(0, 0, 0, 0.3);
   transition: all .5s ease; }
-  .navigation__link:link:hover, .navigation__link:link:active, .navigation__link:visited:hover, .navigation__link:visited:active {
-    color: #54c478; }
+  .navigation__link:link:hover, .navigation__link:visited:hover {
+    color: #54c478;
+    background-position: 100%;
+    transform: translateY(-0.5rem);
+    box-shadow: 2rem 3rem 5rem rgba(0, 0, 0, 0.3); }
+  .navigation__link:link:active, .navigation__link:visited:active {
+    color: #54c478;
+    transform: translateY(0);
+    box-shadow: 1rem 2rem 5rem rgba(0, 0, 0, 0.3); }
 
 .section-about {
   background-color: whitesmoke;

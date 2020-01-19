@@ -21,7 +21,9 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient($color-primary-light, $color-primary-dark);
+    background-image: radial-gradient(
+    $color-primary-light,
+    $color-primary-dark);
     z-index: 1000;
 
     transform: scale(80); // For Development - Delete
@@ -43,17 +45,63 @@
   }
 
   &__item {
+    font-size: 3rem;
+    font-weight: 300;
+    color: $color-white;
     margin: 1rem;
   }
 
   &__link {
-    font-size: 3rem;
-    font-weight: 300;
-    color: $color-white;
-    text-transform: uppercase;
-    text-decoration: none;
+    &:link,
+    &:visited {
+      color: inherit;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      $color-white 50%);
+      background-size: 100%;
+      background-position: 60%;
+      transition: all .5s ease;
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+
+      }
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

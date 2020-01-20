@@ -104,6 +104,23 @@
     opacity: 1;
     visibility: visible;
   }
+
+  &__icon {
+    &,
+    &::before,
+    &::after {
+      background-color: $color-black;
+      display: inline-block;
+      width: 3rem;
+      height: .1rem;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+
+    }
+  }
 }
 
 

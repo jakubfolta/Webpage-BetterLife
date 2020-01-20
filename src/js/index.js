@@ -4,9 +4,5 @@ const nav = document.getElementById('navi');
 Array.from(navLinks).forEach(link =>
   link.addEventListener('click', () => {
     nav.checked = false;
-    const element = link.className;
-    console.log(link.className);
-
-    link.scrollIntoView();
   })
 );

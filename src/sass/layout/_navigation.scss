@@ -4,6 +4,7 @@
   }
 
   &__button {
+    text-align: center;
     background-color: $color-white;
     width: 7rem;
     height: 7rem;
@@ -106,6 +107,7 @@
   }
 
   &__icon {
+    position: relative;
     &,
     &::before,
     &::after {
@@ -118,8 +120,12 @@
     &::before,
     &::after {
       content: '';
-
+      left: 0;
+      position: absolute;
     }
+
+    &::before { top: -.8rem; }
+    &::after { top: .8rem; }
   }
 }
 

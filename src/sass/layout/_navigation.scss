@@ -114,8 +114,9 @@
     &::after {
       background-color: $color-black;
       display: inline-block;
-      width: 3rem;
+      width: 3.5rem;
       height: .3rem;
+      transition: all .2s;
     }
 
     &::before,
@@ -123,7 +124,6 @@
       content: '';
       left: 0;
       position: absolute;
-      transition: all .2s;
     }
 
     &::before { top: -.8rem; }
@@ -132,6 +132,18 @@
 
   &__button:hover &__icon:before { top: -1rem }
   &__button:hover &__icon:after { top: 1rem }
+
+  &__checkbox:checked ~ &__button &__icon { background-color: transparent}
+
+  &__checkbox:checked ~ &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked ~ &__button &__icon:after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
 }
 
 

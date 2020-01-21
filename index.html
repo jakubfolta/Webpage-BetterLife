@@ -23,6 +23,24 @@
 
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi">
+
+      <label for="navi" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#about" class="navigation__link">&#8544; About Better life</a></li>
+          <li class="navigation__item"><a href="#features" class="navigation__link">&#8545; Your new life</a></li>
+          <li class="navigation__item"><a href="#courses" class="navigation__link">&#8546; Popular courses</a></li>
+          <li class="navigation__item"><a href="#book" class="navigation__link">&#8547; Reserve seat</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="src/img/logo-white.png" alt="logo" class="header__logo"/>
@@ -38,7 +56,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting transformations for successful people
@@ -74,7 +92,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -118,7 +136,7 @@
         </div>
       </section>
 
-      <section class="section-courses">
+      <section class="section-courses" id="courses">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Most popular courses
@@ -298,7 +316,7 @@
         </div>
       </section>
 
-      <section class="section-book">
+      <section class="section-book" id="book">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -429,7 +447,7 @@
       </div>
     </section> -->
 
-
+    <script src="src/js/index.js"></script>
   </body>
 </html>
 

@@ -6,6 +6,9 @@
   box-sizing: inherit;
 }
 
-html { font-size: 62.5%; } // This defines what 1rem is.
+html {
+  font-size: 62.5%;  // This defines what 1rem is.
+  scroll-behavior: smooth;
+}
 
 body { box-sizing: border-box; }

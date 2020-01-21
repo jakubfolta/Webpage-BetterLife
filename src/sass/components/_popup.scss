@@ -9,22 +9,37 @@
 
   &__content {
     width: 75%;
-    height: 50rem;  // DELETE
     background-color: $color-white;
     @include center-hor-ver;
     box-shadow: 1rem 2rem 4rem $color-black-shadow;
     border-radius: .3rem;
+    display: table;
+    overflow: hidden;
   }
 
   &__left {
-
+    width: 33.333333%;
+    display: table-cell;
   }
 
   &__img {
-
+    width: 100%;
+    display: block;
   }
 
   &__right {
+    width: 66.666666%;
+    padding: 3rem 4rem;
+    display: table-cell;
+    vertical-align: middle;
+  }
 
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: .1rem solid $color-grey-dark;
+    hyphens: auto;
   }
 }

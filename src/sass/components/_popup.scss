@@ -6,6 +6,14 @@
   left: 0;
   background-color: rgba($color-black, 0.8);
   z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &__content {
     width: 75%;
@@ -40,6 +48,7 @@
     column-count: 3;
     column-gap: 4rem;
     column-rule: .1rem solid $color-grey-dark;
+    -webkit-hyphens: auto;
     hyphens: auto;
   }
 }

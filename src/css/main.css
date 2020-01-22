@@ -417,7 +417,13 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 3000; }
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
   .popup__content {
     width: 75%;
     background-color: white;
@@ -446,6 +452,7 @@ body {
     column-count: 3;
     column-gap: 4rem;
     column-rule: 0.1rem solid #595959;
+    -webkit-hyphens: auto;
     hyphens: auto; }
 
 .story {

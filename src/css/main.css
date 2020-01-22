@@ -432,9 +432,9 @@ body {
     border-radius: .3rem;
     display: table;
     overflow: hidden;
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.2);
     opacity: 0;
-    transition: all 0.5s cubic-bezier(0.38, 1.4, 0.91, 1.13); }
+    transition: all 0.5s cubic-bezier(0.38, 1.4, 0.24, 1.06) 0.4s; }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
@@ -457,6 +457,9 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
     font-size: 4rem;
     text-decoration: none;
@@ -469,9 +472,6 @@ body {
     transition: color .3s; }
     .popup__close:link:hover, .popup__close:visited:hover {
       color: #54c478; }
-  .popup:target .popup__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); }
 
 .story {
   width: 75%;

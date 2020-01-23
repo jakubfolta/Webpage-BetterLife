@@ -8,7 +8,24 @@
 
 html {
   font-size: 62.5%;  // This defines what 1rem is.
+  // 1rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth;
+
+  @include respond(phone) {
+    font-size: 62.5%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 62.5%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @include respond(big-desktop) {
+    font-size: 62.5%;
+  }
 }
 
 body { box-sizing: border-box; }

@@ -578,6 +578,10 @@ body {
     padding-top: 2rem;
     border-top: 0.1rem solid #a6a6a6;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -601,6 +605,11 @@ body {
     border-top: 0.1rem solid #a6a6a6;
     width: 85%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none;
+        text-align: center; } }
 
 .header {
   height: 95vh;
@@ -635,7 +644,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 55rem;
+      padding: 3rem; } }
   .row::after {
     content: '';
     display: table;

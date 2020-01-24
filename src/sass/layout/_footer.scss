@@ -18,6 +18,11 @@
     padding-top: 2rem;
     border-top: .1rem solid $color-grey-dark-2;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -58,6 +63,12 @@
     border-top: .1rem solid $color-grey-dark-2;
     width: 85%;
     float: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
   }
 }
 

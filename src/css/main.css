@@ -691,8 +691,8 @@ body {
       right: 3rem; } }
   @media (max-width: 37.5em) {
     .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
+      top: 2rem;
+      right: 2rem; } }
 
 .navigation__background {
   width: 6rem;
@@ -704,6 +704,14 @@ body {
   background-image: radial-gradient(#7dd46e, #29b382);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 2.5rem;
+      right: 2.5rem; } }
 
 .navigation__nav {
   height: 100vh;

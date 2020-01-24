@@ -1,10 +1,14 @@
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__input {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: inherit;
     color: inherit;
     padding: 1.5rem 2rem;
@@ -15,6 +19,11 @@
     display: block;
     width: 90%;
     transition: all .3s ease;
+
+    @include respond(tab-port) {
+      padding: 1rem 1.5rem;
+      width: 60%;
+    }
 
     &::placeholder {
       color: $color-grey-dark-2;
@@ -38,6 +47,10 @@
     margin-top: .7rem;
     margin-left: 2rem;
     transition: all .5s ease;
+
+    @include respond(tab-port) {
+      letter-spacing: .2rem;
+    }
   }
 
   &__input:placeholder-shown + &__label {

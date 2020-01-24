@@ -9,8 +9,29 @@
   transform: skewX(-12deg);
   backface-visibility: hidden;
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 6rem;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 3rem;
+    padding-left: 5rem;
+    box-shadow: .3rem .4rem .6rem $color-black-shadow;
+    background-color: rgba($color-white, .6);
+    border-radius: $border-radius;
+    transform: skewX(0);
+    backface-visibility: hidden;
+  }
+
   & > * {
     transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__shape {
@@ -23,6 +44,10 @@
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden;
     backface-visibility: hidden;
+
+    @include respond(phone) {
+      transform: translateX(-2rem) skewX(0);
+    }
   }
 
   &__text {

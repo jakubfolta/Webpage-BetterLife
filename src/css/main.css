@@ -601,11 +601,7 @@ body {
       width: 100%;
       padding: 3rem;
       padding-left: 5rem;
-      box-shadow: 0.3rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
-      background-color: rgba(255, 255, 255, 0.6);
-      border-radius: 0.3rem;
-      transform: skewX(0);
-      backface-visibility: hidden; } }
+      transform: skewX(0); } }
   .story > * {
     transform: skewX(12deg); }
     @media (max-width: 37.5em) {
@@ -938,6 +934,9 @@ body {
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
+  @media (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem 0; } }
   @media (max-width: 37.5em) {
     .section-book {
       padding: 5rem 0; } }
@@ -947,6 +946,13 @@ body {
   background-size: cover;
   border-radius: .3rem;
   box-shadow: 3rem 4rem 6rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(125deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 62%, transparent 50%), url(../img/bet-3.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%;
+        padding: 4rem; } }

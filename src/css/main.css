@@ -88,7 +88,8 @@ body {
         letter-spacing: 1rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: .5rem;
+        font-size: 5rem;
+        letter-spacing: .2rem;
         white-space: nowrap; } }
   .heading-primary--sub {
     display: block;
@@ -98,7 +99,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .3rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -729,10 +730,13 @@ body {
 
 .header {
   height: 95vh;
-  background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover;
+  background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero-small.jpg) center/cover;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+    .header {
+      background: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover; } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -741,6 +745,10 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem; }
+    @media (max-width: 37.5em) {
+      .header__logo-box {
+        top: 2rem;
+        left: 2rem; } }
   .header__logo {
     height: 5rem; }
   .header__text-box {
@@ -817,6 +825,8 @@ body {
       right: 3rem; } }
   @media (max-width: 37.5em) {
     .navigation__button {
+      width: 5rem;
+      height: 5rem;
       top: 2rem;
       right: 2rem; } }
 
@@ -836,6 +846,8 @@ body {
       right: 3.5rem; } }
   @media (max-width: 37.5em) {
     .navigation__background {
+      width: 4rem;
+      height: 4rem;
       top: 2.5rem;
       right: 2.5rem; } }
 
@@ -900,12 +912,18 @@ body {
 .navigation__icon {
   position: relative;
   margin-top: 3.4rem; }
+  @media (max-width: 37.5em) {
+    .navigation__icon {
+      margin-top: 2.4rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     background-color: black;
     display: inline-block;
     width: 3.5rem;
     height: .3rem;
     transition: all .2s; }
+    @media (max-width: 37.5em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 3rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: '';
     left: 0;

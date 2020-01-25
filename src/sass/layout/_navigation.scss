@@ -21,6 +21,8 @@
       right: 3rem;
     }
     @include respond(phone) {
+      width: 5rem;
+      height: 5rem;
       top: 2rem;
       right: 2rem;
     }
@@ -45,6 +47,8 @@
     }
 
     @include respond(phone) {
+      width: 4rem;
+      height: 4rem;
       top: 2.5rem;
       right: 2.5rem;
     }
@@ -128,6 +132,11 @@
   &__icon {
     position: relative;
     margin-top: 3.4rem;
+
+    @include respond(phone) {
+      margin-top: 2.4rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -136,6 +145,10 @@
       width: 3.5rem;
       height: .3rem;
       transition: all .2s;
+
+      @include respond(phone) {
+        width: 3rem;
+      }
     }
 
     &::before,

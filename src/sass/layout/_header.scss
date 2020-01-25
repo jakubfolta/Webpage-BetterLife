@@ -4,9 +4,17 @@
     to bottom right,
     rgba($color-primary-light, .8),
     rgba($color-primary-dark, .8)),
-    url(../img/hero.jpg) center/cover;
-  position: relative;
+    url(../img/hero-small.jpg) center/cover;
 
+  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+    background: linear-gradient(
+    to bottom right,
+    rgba($color-secondary-light, .8),
+    rgba($color-primary-dark, .8)),
+    url(../img/hero.jpg) center/cover;
+  }
+
+  position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
@@ -19,6 +27,11 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
+
+    @include respond(phone) {
+      top: 2rem;
+      left: 2rem;
+    }
   }
 
   &__logo {

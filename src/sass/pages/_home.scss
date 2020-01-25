@@ -68,7 +68,7 @@
   box-shadow: 3rem 4rem 6rem $color-black-shadow;
 
   @include respond(tab-port) {
-    background-image: linear-gradient(125deg,
+    background-image: linear-gradient(104deg,
     rgba($color-white, .7) 0%,
     rgba($color-white, .7) 62%,
     transparent 50%),

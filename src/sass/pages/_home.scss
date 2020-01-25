@@ -63,14 +63,22 @@
     transparent 50%),
     url(../img/bet-3.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: .3rem;
   box-shadow: 3rem 4rem 6rem $color-black-shadow;
 
   @include respond(tab-port) {
     background-image: linear-gradient(125deg,
-    rgba($color-white, .8) 0%,
-    rgba($color-white, .8) 62%,
+    rgba($color-white, .7) 0%,
+    rgba($color-white, .7) 62%,
     transparent 50%),
+    url(../img/bet-3.jpg);
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+    rgba($color-white, .7),
+    rgba($color-white, .7)),
     url(../img/bet-3.jpg);
   }
 

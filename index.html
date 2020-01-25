@@ -365,7 +365,12 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="src/img/blife.png" alt="Footer logo" class="footer__logo">
+        <picture class="footer__logo">
+          <source srcset="src/img/blife-small-1x.png 1x, src/img/blife-small-2x.png 2x"
+                  media="(max-width: 37.5em)">
+          <img srcset="src/img/blife-1x.png 1x, src/img/blife-2x.png 2x" alt="Footer logo">
+        </picture>
+
       </div>
 
       <div class="row">

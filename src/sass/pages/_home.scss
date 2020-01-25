@@ -15,7 +15,7 @@
     to bottom right,
     rgba($color-primary-light, .8),
     rgba($color-primary-dark, .8)),
-    url(../img/bet-3.jpg) center/cover;
+    url(../img/bet-2.jpg) center/cover;
 
     transform: skewY(-7deg);
 
@@ -61,7 +61,7 @@
     rgba($color-white, .8) 0%,
     rgba($color-white, .8) 50%,
     transparent 50%),
-    url(../img/bet-3.jpg);
+    url(../img/bet-1.jpg);
   background-size: cover;
   background-position: center;
   border-radius: .3rem;
@@ -72,14 +72,14 @@
     rgba($color-white, .7) 0%,
     rgba($color-white, .7) 62%,
     transparent 50%),
-    url(../img/bet-3.jpg);
+    url(../img/bet-1.jpg);
   }
 
   @include respond(phone) {
     background-image: linear-gradient(
     rgba($color-white, .7),
     rgba($color-white, .7)),
-    url(../img/bet-3.jpg);
+    url(../img/bet-1.jpg);
   }
 
   &__form {

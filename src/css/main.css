@@ -82,6 +82,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2rem;
+    white-space: nowrap;
     animation: moveInLeft 1s ease-out; }
     @media (max-width: 56.25em) {
       .heading-primary--main {
@@ -89,8 +90,7 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 5rem;
-        letter-spacing: .2rem;
-        white-space: nowrap; } }
+        letter-spacing: .2rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -737,6 +737,9 @@ body {
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
     .header {
       background: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover; } }
+  @media (min-width: 125em) {
+    .header {
+      background: linear-gradient(to bottom right, rgba(41, 155, 255, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover; } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -956,6 +959,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
+      margin-top: -17vh;
       padding: 20rem 0; } }
 
 .section-features {
@@ -975,6 +979,7 @@ body {
   margin-top: -16vh; }
   @media (max-width: 37.5em) {
     .section-courses {
+      margin-top: -13vh;
       padding: 20rem 0 3rem; } }
 
 .section-stories {

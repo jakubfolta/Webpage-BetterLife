@@ -16,6 +16,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2rem;
+    white-space: nowrap;
 
     animation: moveInLeft 1s ease-out;
 
@@ -26,7 +27,6 @@ body {
     @include respond(phone) {
       font-size: 5rem;
       letter-spacing: .2rem;
-      white-space: nowrap;
     }
   }
 

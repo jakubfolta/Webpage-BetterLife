@@ -84,9 +84,21 @@
 
           <div class="col-1-of-2">
             <div class="composition">
-              <img src="src/img/suc.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-              <img src="src/img/suc-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-              <img src="src/img/suc-3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+              <img srcset="src/img/suc.jpg 300w, src/img/suc-large.jpg 1280w"
+                   sizes="(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px"
+                   alt="Photo 1"
+                   class="composition__photo composition__photo--p1"
+                   src="src/img/suc-large.jpg">
+              <img srcset="src/img/suc-2.jpg 300w, src/img/suc-2-large.jpg 1280w"
+                   sizes="(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px"
+                   alt="Photo 2"
+                   class="composition__photo composition__photo--p2"
+                   src="src/img/suc-2-large.jpg">
+              <img srcset="src/img/suc-3.jpg 300w, src/img/suc-3-large.jpg 1280w"
+                   sizes="(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px"
+                   alt="Photo 3"
+                   class="composition__photo composition__photo--p3"
+                   src="src/img/suc-3-large.jpg">
             </div>
           </div>
         </div>
@@ -368,7 +380,7 @@
         <picture class="footer__logo">
           <source srcset="src/img/blife-small-1x.png 1x, src/img/blife-small-2x.png 2x"
                   media="(max-width: 37.5em)">
-          <img srcset="src/img/blife-1x.png 1x, src/img/blife-2x.png 2x" alt="Footer logo">
+          <img srcset="src/img/blife-1x.png 1x, src/img/blife-2x.png 2x" alt="Footer logo" src="src/img/blife-2x.png">
         </picture>
 
       </div>

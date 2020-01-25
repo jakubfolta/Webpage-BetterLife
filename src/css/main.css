@@ -492,6 +492,12 @@ body {
 .form__radio-group {
   display: inline-block;
   width: 49%; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      display: block;
+      width: 100%; }
+      .form__radio-group:not(:last-child) {
+        margin-bottom: 1rem; } }
 
 .form__radio-input {
   -webkit-appearance: none; }

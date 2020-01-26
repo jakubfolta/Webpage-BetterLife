@@ -6,7 +6,13 @@
     rgba($color-primary-dark, .8)),
     url(../img/hero-small.jpg) center/cover;
 
-  
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background: linear-gradient(
+      to bottom right,
+      rgba($color-secondary-light, .8),
+      rgba($color-primary-dark, .8)),
+      url(../img/hero.jpg) center/cover;
+    }
 
   @media (min-width: 125em) {
     background: linear-gradient(

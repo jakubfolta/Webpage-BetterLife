@@ -14,7 +14,13 @@
       url(../img/hero.jpg) center/cover;
     }
 
-  
+    @media (min-width: 125em) {
+      background: linear-gradient(
+      to bottom right,
+      rgba($color-tertiary-light, .8),
+      rgba($color-primary-dark, .8)),
+      url(../img/hero.jpg) center/cover;
+    }
 
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

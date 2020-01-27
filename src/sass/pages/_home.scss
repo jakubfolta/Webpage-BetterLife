@@ -94,13 +94,12 @@
   }
 
   @media (min-resolution: 192dpi) and (min-width: 37.5em),
-         (min-width:) {
-    background-image: linear-gradient(
-      105deg,
-      rgba($color-white, .8) 0%,
-      rgba($color-white, .8) 50%,
-      transparent 50%),
-      url(../img/bet-1.jpg);
+         (min-width: 120em) {
+    background-image: linear-gradient(104deg,
+    rgba($color-white, .7) 0%,
+    rgba($color-white, .7) 62%,
+    transparent 50%),
+    url(../img/bet-1-large.jpg);
   }
 
   &__form {

@@ -15,6 +15,17 @@
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 1rem 2rem 4rem $color-black-shadow;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
+    @include respond(phone) {
+      width: 5rem;
+      height: 5rem;
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__background {
@@ -29,6 +40,18 @@
     $color-primary-dark);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tab-port) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
+    @include respond(phone) {
+      width: 4rem;
+      height: 4rem;
+      top: 2.5rem;
+      right: 2.5rem;
+    }
   }
 
   &__nav {
@@ -109,6 +132,11 @@
   &__icon {
     position: relative;
     margin-top: 3.4rem;
+
+    @include respond(phone) {
+      margin-top: 2.4rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -117,6 +145,10 @@
       width: 3.5rem;
       height: .3rem;
       transition: all .2s;
+
+      @include respond(phone) {
+        width: 3rem;
+      }
     }
 
     &::before,

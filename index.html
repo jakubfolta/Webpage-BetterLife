@@ -43,7 +43,13 @@
 
     <header class="header">
       <div class="header__logo-box">
-        <img src="src/img/logo-white.png" alt="logo" class="header__logo"/>
+        <picture class="header__logo">
+          <source srcset="src/img/logo-white-small-1x.png 1x, src/img/logo-white-small.png 2x"
+                  media="(max-width: 37.5em)">
+                  <img srcset="src/img/logo-white-small.png 1x, src/img/logo-white.png 2x"
+                       alt="logo"
+                       src="src/img/logo-white.png"/>
+        </picture>
       </div>
 
       <div class="header__text-box">
@@ -84,9 +90,21 @@
 
           <div class="col-1-of-2">
             <div class="composition">
-              <img src="src/img/suc.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-              <img src="src/img/suc-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-              <img src="src/img/suc-3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+              <img srcset="src/img/suc.jpg 300w, src/img/suc-large.jpg 1280w"
+                   sizes="(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px"
+                   alt="Photo 1"
+                   class="composition__photo composition__photo--p1"
+                   src="src/img/suc-large.jpg">
+              <img srcset="src/img/suc-2.jpg 300w, src/img/suc-2-large.jpg 1280w"
+                   sizes="(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px"
+                   alt="Photo 2"
+                   class="composition__photo composition__photo--p2"
+                   src="src/img/suc-2-large.jpg">
+              <img srcset="src/img/suc-3.jpg 300w, src/img/suc-3-large.jpg 1280w"
+                   sizes="(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px"
+                   alt="Photo 3"
+                   class="composition__photo composition__photo--p3"
+                   src="src/img/suc-3-large.jpg">
             </div>
           </div>
         </div>
@@ -225,7 +243,7 @@
 
                 <h4 class="card__heading">
                   <span class="card__heading-span card__heading-span--3">
-                    Full transformation
+                    New life
                   </span>
                 </h4>
 
@@ -280,7 +298,11 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="src/img/story.jpg" alt="Transformed person" class="story__img" />
+              <img srcset="src/img/story.jpg 2000w, src/img/story-small.jpg 1000w"
+                   sizes="(max-width: 56.25em) 25vw, (max-width: 37.5em) 40vw, 290px"
+                   alt="Transformed person"
+                   class="story__img"
+                   src="src/img/story.jpg">
               <figcaption class="story__caption">Mary Smith</figcaption>
             </figure>
             <div class="story__text">
@@ -297,7 +319,11 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="src/img/story-2.jpg" alt="Transformed person" class="story__img" />
+              <img srcset="src/img/story-2.jpg 2000w, src/img/story-2-small.jpg 1000w"
+                   sizes="(max-width: 56.25em) 25vw, (max-width: 37.5em) 40vw, 290px"
+                   alt="Transformed person"
+                   class="story__img"
+                   src="src/img/story-2.jpg"/>
               <figcaption class="story__caption">John Wick</figcaption>
             </figure>
             <div class="story__text">
@@ -365,7 +391,12 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="src/img/blife.png" alt="Footer logo" class="footer__logo">
+        <picture class="footer__logo">
+          <source srcset="src/img/blife-small-1x.png 1x, src/img/blife-small-2x.png 2x"
+                  media="(max-width: 37.5em)">
+          <img srcset="src/img/blife-1x.png 1x, src/img/blife-2x.png 2x" alt="Footer logo" src="src/img/blife-2x.png">
+        </picture>
+
       </div>
 
       <div class="row">
@@ -401,21 +432,25 @@
 
     <div class="popup" id="popup">
       <div class="popup__content">
-        <div class="popup__left">
-          <img src="src/img/story.jpg" alt="Popup image" class="popup__img">
-          <img src="src/img/story-2.jpg" alt="Popup image" class="popup__img">
-        </div>
-
-        <div class="popup__right">
+        <div class="popup__top">
           <a href="#courses" class="popup__close">&times;</a>
           <h2 class="heading-secondary u-margin-bottom-medium">Start your transformation</h2>
           <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; please read these terms before your change starts</h3>
           <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
           <a href="#book" class="btn btn--green">Book now</a>
+
+        </div>
+        <div class="popup__bottom">
+          <img src="src/img/story.jpg" alt="Popup image" class="popup__img">
+          <img src="src/img/story-2.jpg" alt="Popup image" class="popup__img">
         </div>
       </div>
     </div>
     <script src="src/js/index.js"></script>
   </body>
 </html>
+
+
+
+
 

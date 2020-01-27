@@ -2,6 +2,11 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include respond(tab-port) {
+    margin-top: -17vh;
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -11,9 +16,22 @@
     to bottom right,
     rgba($color-primary-light, .8),
     rgba($color-primary-dark, .8)),
-    url(../img/bet-3.jpg) center/cover;
+    url(../img/bet-2.jpg) center/cover;
 
     transform: skewY(-7deg);
+
+    @include respond(tab-port) {
+      padding: 10rem 0;
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+           (min-width: 120em) {
+      background: linear-gradient(
+      to bottom right,
+      rgba($color-primary-light, .8),
+      rgba($color-primary-dark, .8)),
+      url(../img/bet-2-large.jpg) center/cover;
+    }
 
   & > * {
     transform: skewY(7deg);
@@ -23,7 +41,12 @@
 .section-courses {
   padding: 25rem 0 5rem;
   background-color: $color-grey-light-1;
-  margin-top: -12vh;
+  margin-top: -16vh;
+
+  @include respond(phone) {
+    margin-top: -13vh;
+    padding: 20rem 0 3rem;
+  }
 }
 
 .section-stories {
@@ -34,6 +57,14 @@
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 }
 
 .book {
@@ -41,14 +72,43 @@
     rgba($color-white, .8) 0%,
     rgba($color-white, .8) 50%,
     transparent 50%),
-    url(../img/bet-3.jpg);
+    url(../img/bet-1.jpg);
   background-size: cover;
-
+  background-position: center;
   border-radius: .3rem;
   box-shadow: 3rem 4rem 6rem $color-black-shadow;
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(104deg,
+    rgba($color-white, .7) 0%,
+    rgba($color-white, .7) 62%,
+    transparent 50%),
+    url(../img/bet-1.jpg);
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+    rgba($color-white, .7),
+    rgba($color-white, .7)),
+    url(../img/bet-1.jpg);
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+         (min-width: 120em) {
+    background-image: linear-gradient(104deg,
+    rgba($color-white, .7) 0%,
+    rgba($color-white, .7) 62%,
+    transparent 50%),
+    url(../img/bet-1-large.jpg);
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      padding: 4rem;
+    }
   }
 }

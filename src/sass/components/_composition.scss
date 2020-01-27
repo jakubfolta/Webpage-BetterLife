@@ -7,22 +7,46 @@
     border-radius: $border-radius;
     position: absolute;
     transition: all .2s;
-    z-index: 100;
+    z-index: 10;
     outline-offset: 2rem;
+
+    @include respond(tab-port) {
+      float: left;
+      position: relative;
+      width: 33.33333%;
+      box-shadow: 0 1rem 4rem $color-black-shadow;
+    }
 
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include respond(tab-port) {
+        top: .5rem;
+        transform: scale(1.2);
+      }
     }
 
     &--p2 {
       right: 0;
-      top: 2rem;
+      top: -1rem;
+
+      @include respond(tab-port) {
+        transform: scale(1.3);
+        z-index: 200;
+        top: -1rem;
+      }
     }
 
     &--p3 {
       left: 25%;
-      top: 10rem;
+      top: -3rem;
+
+      @include respond(tab-port) {
+        left: 0;
+        top: 1.5rem;
+        transform: scale(1.1);
+      }
     }
 
     &:hover {

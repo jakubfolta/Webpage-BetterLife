@@ -967,6 +967,9 @@ body {
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+    .section-features {
+      background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/bet-2-large.jpg) center/cover; } }
   .section-features > * {
     transform: skewY(7deg); }
 
@@ -1005,6 +1008,9 @@ body {
   @media (max-width: 37.5em) {
     .book {
       background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/bet-1.jpg); } }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: ) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../img/bet-1.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }

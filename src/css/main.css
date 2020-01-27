@@ -284,10 +284,19 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+        .card__picture--1 {
+          background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour-large.jpg); } }
     .card__picture--2 {
       background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+        .card__picture--2 {
+          background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2-large.jpg); } }
     .card__picture--3 {
       background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+        .card__picture--3 {
+          background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3-large.jpg); } }
   .card__heading {
     text-align: right;
     width: 50%;

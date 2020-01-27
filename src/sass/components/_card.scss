@@ -46,19 +46,51 @@
       to bottom right,
       $color-secondary-light,
       $color-secondary-dark),
-      url(../img/cour.jpg); }
+      url(../img/cour.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 120em) {
+        background-image: linear-gradient(
+        to bottom right,
+        $color-secondary-light,
+        $color-secondary-dark),
+        url(../img/cour-large.jpg);
+      }
+    }
+
 
     &--2 { background-image: linear-gradient(
       to bottom right,
       $color-primary-light,
       $color-primary-dark),
-      url(../img/cour-2.jpg); }
+      url(../img/cour-2.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 120em) {
+        background-image: linear-gradient(
+        to bottom right,
+        $color-primary-light,
+        $color-primary-dark),
+        url(../img/cour-2-large.jpg);
+      }
+    }
+
 
     &--3 { background-image: linear-gradient(
       to bottom right,
       $color-tertiary-light,
       $color-tertiary-dark),
-      url(../img/cour-3.jpg); }
+      url(../img/cour-3.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 120em) {
+        background-image: linear-gradient(
+        to bottom right,
+        $color-tertiary-light,
+        $color-tertiary-dark),
+        url(../img/cour-3-large.jpg);
+      }
+    }
   }
 
   &__heading {

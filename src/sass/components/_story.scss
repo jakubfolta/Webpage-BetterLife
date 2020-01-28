@@ -40,10 +40,7 @@
     overflow: hidden;
     backface-visibility: hidden;
 
-    @supports(shape-outside: circle(0)) or (-ms-shape-outside: circle(0)) {
-      -ms-shape-outside: circle(50% at 50% 50%);
-      shape-outside: circle(50% at 50% 50%);
-    }
+    
 
     @include respond(phone) {
       transform: translateX(-2rem) skewX(0);

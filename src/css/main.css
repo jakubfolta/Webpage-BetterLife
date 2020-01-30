@@ -456,14 +456,16 @@ body {
           left: 0;
           top: 1.5rem;
           transform: scale(1.1); } }
-    .composition__photo:hover {
-      transform: scale(1.05) translateY(-1rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.3);
-      z-index: 101;
-      outline: 1.5rem solid #54c478; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.9);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+    @media only screen and (hover: hover) {
+      .composition__photo:hover {
+        transform: scale(1.05) translateY(-1rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.3);
+        z-index: 101;
+        outline: 1.5rem solid #54c478; } }
+  @media only screen and (hover: hover) {
+    .composition:hover .composition__photo:not(:hover) {
+      transform: scale(0.9);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);

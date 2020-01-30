@@ -49,16 +49,20 @@
       }
     }
 
-    &:hover {
-      transform: scale(1.05) translateY(-1rem);
-      box-shadow: 0 2.5rem 4rem $color-black-shadow;
-      z-index: 101;
-      outline: 1.5rem solid $color-primary;
+    @media only screen and (hover: hover) {
+      &:hover {
+        transform: scale(1.05) translateY(-1rem);
+        box-shadow: 0 2.5rem 4rem $color-black-shadow;
+        z-index: 101;
+        outline: 1.5rem solid $color-primary;
+      }
     }
   }
 
-  &:hover &__photo:not(:hover) {
-    transform: scale(.9);
-    box-shadow: 0 1rem 3rem $color-black-shadow;
+  @media only screen and (hover: hover) {
+    &:hover &__photo:not(:hover) {
+      transform: scale(.9);
+      box-shadow: 0 1rem 3rem $color-black-shadow;
+    }
   }
 }

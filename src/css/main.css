@@ -105,12 +105,15 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 600;
-  background-image: linear-gradient(to right, #7dd46e, #29b382);
+  color: #7dd46e;
   display: inline-block;
-  -webkit-background-clip: text;
-  color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @supports (-webkit-background-clip: text) {
+    .heading-secondary {
+      background-image: linear-gradient(to right, #7dd46e, #29b382);
+      -webkit-background-clip: text;
+      color: transparent; } }
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -248,8 +251,11 @@ body {
 
 .card {
   position: relative;
-  perspective: 150rem;
   height: 50rem; }
+  @supports (-webkit-perspective: 150rem) or (perspective: 150rem) {
+    .card {
+      -webkit-perspective: 150rem;
+      perspective: 150rem; } }
   .card__side {
     height: 50rem;
     position: absolute;
@@ -278,39 +284,63 @@ body {
   .card__picture {
     height: 22rem;
     background-position: center;
-    background-size: cover;
-    background-blend-mode: saturation;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    background-size: cover; }
     .card__picture--1 {
-      background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+      background-image: url(../img/cour.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
         .card__picture--1 {
-          background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour-large.jpg); } }
+          background-image: url(../img/cour-large.jpg); } }
     .card__picture--2 {
-      background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
+      background-image: url(../img/cour-2.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
         .card__picture--2 {
-          background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2-large.jpg); } }
+          background-image: url(../img/cour-2-large.jpg); } }
     .card__picture--3 {
-      background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
+      background-image: url(../img/cour-3.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
         .card__picture--3 {
-          background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3-large.jpg); } }
+          background-image: url(../img/cour-3-large.jpg); } }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .card__picture {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); } }
+    @supports (background-blend-mode: saturation) {
+      .card__picture {
+        background-blend-mode: saturation; }
+        .card__picture--1 {
+          background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+          @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+            .card__picture--1 {
+              background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour-large.jpg); } }
+        .card__picture--2 {
+          background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
+          @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+            .card__picture--2 {
+              background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2-large.jpg); } }
+        .card__picture--3 {
+          background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
+          @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+            .card__picture--3 {
+              background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3-large.jpg); } } }
   .card__heading {
     text-align: right;
-    width: 50%;
+    width: 90%;
     position: absolute;
-    top: 12rem;
+    top: 14rem;
     right: 2rem; }
+    @supports (-webkit-box-decoration-break: clone) or (box-decoration-break: clone) {
+      .card__heading {
+        width: 50%;
+        top: 12rem; }
+        .card__heading-span {
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone; } }
   .card__heading-span {
     padding: 1rem 1.5rem;
     font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: white;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
+    color: white; }
     .card__heading-span--1 {
       background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
     .card__heading-span--2 {
@@ -440,9 +470,12 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7dd46e, #29b382);
-    -webkit-background-clip: text;
-    color: transparent; }
+    color: #7dd46e; }
+    @supports (-webkit-background-clip: text) {
+      .feature-box__icon {
+        background-image: linear-gradient(to right, #7dd46e, #29b382);
+        -webkit-background-clip: text;
+        color: transparent; } }
     @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: inherit;
@@ -511,7 +544,7 @@ body {
         margin-bottom: 1rem; } }
 
 .form__radio-input {
-  -webkit-appearance: none; }
+  display: none; }
 
 .form__radio-label {
   font-size: 1.6rem;
@@ -653,10 +686,13 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden;
     backface-visibility: hidden; }
+    @supports (clip-path: circle(0)) or (-webkit-clip-path: circle(0)) {
+      .story__shape {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); } }
     @supports (shape-outside: circle(0)) or (-ms-shape-outside: circle(0)) {
       .story__shape {
         -ms-shape-outside: circle(50% at 50% 50%);
@@ -748,9 +784,12 @@ body {
 .header {
   height: 70vh;
   background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero-small.jpg) center/cover;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover; } }

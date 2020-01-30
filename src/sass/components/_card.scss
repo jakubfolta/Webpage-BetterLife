@@ -46,8 +46,8 @@
     &--1 {
       background-image: url(../img/cour.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
-      (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (min-width: 120em) {
         background-image: url(../img/cour-large.jpg);
       }
     }
@@ -55,8 +55,8 @@
     &--2 {
       background-image: url(../img/cour-2.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
-      (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (min-width: 120em) {
         background-image: url(../img/cour-2-large.jpg);
       }
     }
@@ -64,8 +64,8 @@
     &--3 {
       background-image: url(../img/cour-3.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em),
-      (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (min-width: 120em) {
         background-image: url(../img/cour-3-large.jpg);
       }
     }
@@ -85,8 +85,8 @@
           $color-secondary-dark),
           url(../img/cour.jpg);
 
-        @media (min-resolution: 192dpi) and (min-width: 37.5em),
-        (min-width: 120em) {
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (min-width: 120em) {
           background-image: linear-gradient(
           to bottom right,
           $color-secondary-light,
@@ -102,8 +102,8 @@
           $color-primary-dark),
           url(../img/cour-2.jpg);
 
-        @media (min-resolution: 192dpi) and (min-width: 37.5em),
-        (min-width: 120em) {
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (min-width: 120em) {
           background-image: linear-gradient(
           to bottom right,
           $color-primary-light,
@@ -119,8 +119,8 @@
           $color-tertiary-dark),
           url(../img/cour-3.jpg);
 
-        @media (min-resolution: 192dpi) and (min-width: 37.5em),
-        (min-width: 120em) {
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (min-width: 120em) {
           background-image: linear-gradient(
           to bottom right,
           $color-tertiary-light,
@@ -231,7 +231,15 @@
 
       &--back {
         transform: rotateY(0);
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+
+        @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+
+          .card__cta {
+            padding: 6rem 4rem 4rem;
+          }
+        }
       }
     }
 
@@ -245,7 +253,7 @@
       left: 0;
       transform: translate(0);
       width: 100%;
-      padding: 6rem 4rem 4rem;
+      padding: 3rem 4rem 4rem;
     }
 
     &__price-box { margin-bottom: 2rem; }

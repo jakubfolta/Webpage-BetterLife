@@ -24,8 +24,8 @@
       padding: 10rem 0;
     }
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em),
-           (min-width: 120em) {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+           only screen and (min-width: 120em) {
       background: linear-gradient(
       to bottom right,
       rgba($color-primary-light, .8),
@@ -93,8 +93,8 @@
     url(../img/bet-1.jpg);
   }
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-         (min-width: 120em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+         only screen and (min-width: 120em) {
     background-image: linear-gradient(104deg,
     rgba($color-white, .7) 0%,
     rgba($color-white, .7) 62%,

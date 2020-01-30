@@ -686,10 +686,13 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden;
     backface-visibility: hidden; }
+    @supports (clip-path: circle(0)) or (-webkit-clip-path: circle(0)) {
+      .story__shape {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); } }
     @supports (shape-outside: circle(0)) or (-ms-shape-outside: circle(0)) {
       .story__shape {
         -ms-shape-outside: circle(50% at 50% 50%);

@@ -105,12 +105,15 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 600;
-  background-image: linear-gradient(to right, #7dd46e, #29b382);
+  color: #7dd46e;
   display: inline-block;
-  -webkit-background-clip: text;
-  color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @supports (-webkit-background-clip: text) {
+    .heading-secondary {
+      background-image: linear-gradient(to right, #7dd46e, #29b382);
+      -webkit-background-clip: text;
+      color: transparent; } }
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -748,9 +751,12 @@ body {
 .header {
   height: 70vh;
   background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero-small.jpg) center/cover;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover; } }

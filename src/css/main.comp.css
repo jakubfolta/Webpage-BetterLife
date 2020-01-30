@@ -38,10 +38,6 @@ body {
     body {
       padding: inherit; } }
 
-::selection {
-  background-color: #54c478;
-  color: white; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;

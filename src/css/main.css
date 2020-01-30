@@ -251,8 +251,11 @@ body {
 
 .card {
   position: relative;
-  perspective: 150rem;
   height: 50rem; }
+  @supports (-webkit-perspective: 150rem) or (perspective: 150rem) {
+    .card {
+      -webkit-perspective: 150rem;
+      perspective: 150rem; } }
   .card__side {
     height: 50rem;
     position: absolute;
@@ -281,39 +284,63 @@ body {
   .card__picture {
     height: 22rem;
     background-position: center;
-    background-size: cover;
-    background-blend-mode: saturation;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    background-size: cover; }
     .card__picture--1 {
-      background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+      background-image: url(../img/cour.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
         .card__picture--1 {
-          background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour-large.jpg); } }
+          background-image: url(../img/cour-large.jpg); } }
     .card__picture--2 {
-      background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
+      background-image: url(../img/cour-2.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
         .card__picture--2 {
-          background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2-large.jpg); } }
+          background-image: url(../img/cour-2-large.jpg); } }
     .card__picture--3 {
-      background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
+      background-image: url(../img/cour-3.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
         .card__picture--3 {
-          background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3-large.jpg); } }
+          background-image: url(../img/cour-3-large.jpg); } }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .card__picture {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); } }
+    @supports (background-blend-mode: saturation) {
+      .card__picture {
+        background-blend-mode: saturation; }
+        .card__picture--1 {
+          background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
+          @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+            .card__picture--1 {
+              background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour-large.jpg); } }
+        .card__picture--2 {
+          background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
+          @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+            .card__picture--2 {
+              background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2-large.jpg); } }
+        .card__picture--3 {
+          background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
+          @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+            .card__picture--3 {
+              background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3-large.jpg); } } }
   .card__heading {
     text-align: right;
-    width: 50%;
+    width: 90%;
     position: absolute;
-    top: 12rem;
+    top: 14rem;
     right: 2rem; }
+    @supports (-webkit-box-decoration-break: clone) or (box-decoration-break: clone) {
+      .card__heading {
+        width: 50%;
+        top: 12rem; }
+        .card__heading-span {
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone; } }
   .card__heading-span {
     padding: 1rem 1.5rem;
     font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: white;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
+    color: white; }
     .card__heading-span--1 {
       background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
     .card__heading-span--2 {

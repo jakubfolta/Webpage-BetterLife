@@ -470,9 +470,12 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7dd46e, #29b382);
-    -webkit-background-clip: text;
-    color: transparent; }
+    color: #7dd46e; }
+    @supports (-webkit-background-clip: text) {
+      .feature-box__icon {
+        background-image: linear-gradient(to right, #7dd46e, #29b382);
+        -webkit-background-clip: text;
+        color: transparent; } }
     @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: inherit;

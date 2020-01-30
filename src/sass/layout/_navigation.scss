@@ -103,17 +103,19 @@
       box-shadow: -1rem 2rem 5rem $color-black-shadow;
       transition: all .5s ease;
 
-      &:hover {
-        color: $color-primary;
-        background-position: 100%;
-        transform: translate(1rem, -.5rem);
-        box-shadow: -2rem 3rem 5rem $color-black-shadow;
-      }
+      @media only screen and (hover: hover) {
+        &:hover {
+          color: $color-primary;
+          background-position: 100%;
+          transform: translate(1rem, -.5rem);
+          box-shadow: -2rem 3rem 5rem $color-black-shadow;
+        }
 
-      &:active {
-        color: $color-primary;
-        transform: translateY(0);
-        box-shadow: -1rem 2rem 5rem $color-black-shadow;
+        &:active {
+          color: $color-primary;
+          transform: translateY(0);
+          box-shadow: -1rem 2rem 5rem $color-black-shadow;
+        }
       }
     }
   }
@@ -162,8 +164,10 @@
     &::after { top: .8rem; }
   }
 
-  &__button:hover &__icon:before { top: -1rem }
-  &__button:hover &__icon:after { top: 1rem }
+  @media only screen and (hover: hover) {
+    &__button:hover &__icon:before { top: -1rem }
+    &__button:hover &__icon:after { top: 1rem }
+  }
 
   &__checkbox:checked ~ &__button &__icon { background-color: transparent}
 

@@ -493,9 +493,10 @@ body {
         margin-bottom: inherit;
         font-size: 5rem;
         line-height: 1; } }
-  .feature-box:hover {
-    transform: translateY(-0.3rem) scale(1.05);
-    box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (hover: hover) {
+    .feature-box:hover {
+      transform: translateY(-0.3rem) scale(1.05);
+      box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.3); } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -664,8 +665,9 @@ body {
     right: 2rem;
     line-height: 1;
     transition: color .3s; }
-    .popup__close:link:hover, .popup__close:visited:hover {
-      color: #54c478; }
+    @media only screen and (hover: hover) {
+      .popup__close:link:hover, .popup__close:visited:hover {
+        color: #54c478; } }
 
 .story {
   width: 75%;
@@ -964,15 +966,16 @@ body {
   background-size: 220%;
   box-shadow: -1rem 2rem 5rem rgba(0, 0, 0, 0.3);
   transition: all .5s ease; }
-  .navigation__link:link:hover, .navigation__link:visited:hover {
-    color: #54c478;
-    background-position: 100%;
-    transform: translate(1rem, -0.5rem);
-    box-shadow: -2rem 3rem 5rem rgba(0, 0, 0, 0.3); }
-  .navigation__link:link:active, .navigation__link:visited:active {
-    color: #54c478;
-    transform: translateY(0);
-    box-shadow: -1rem 2rem 5rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (hover: hover) {
+    .navigation__link:link:hover, .navigation__link:visited:hover {
+      color: #54c478;
+      background-position: 100%;
+      transform: translate(1rem, -0.5rem);
+      box-shadow: -2rem 3rem 5rem rgba(0, 0, 0, 0.3); }
+    .navigation__link:link:active, .navigation__link:visited:active {
+      color: #54c478;
+      transform: translateY(0);
+      box-shadow: -1rem 2rem 5rem rgba(0, 0, 0, 0.3); } }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
@@ -1007,11 +1010,11 @@ body {
   .navigation__icon::after {
     top: .8rem; }
 
-.navigation__button:hover .navigation__icon:before {
-  top: -1rem; }
-
-.navigation__button:hover .navigation__icon:after {
-  top: 1rem; }
+@media only screen and (hover: hover) {
+  .navigation__button:hover .navigation__icon:before {
+    top: -1rem; }
+  .navigation__button:hover .navigation__icon:after {
+    top: 1rem; } }
 
 .navigation__checkbox:checked ~ .navigation__button .navigation__icon {
   background-color: transparent; }

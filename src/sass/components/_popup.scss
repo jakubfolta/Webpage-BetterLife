@@ -91,8 +91,10 @@
       line-height: 1;
       transition: color .3s;
 
-      &:hover {
-        color: $color-primary;
+      @media only screen and (hover: hover) {
+        &:hover {
+          color: $color-primary;
+        }
       }
     }
   }

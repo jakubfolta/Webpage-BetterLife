@@ -30,8 +30,10 @@
     }
   }
 
-  &:hover {
-    transform: translateY(-.3rem) scale(1.05);
-    box-shadow: 0 2.5rem 3rem $color-black-shadow;
+  @media only screen and (hover: hover) {
+    &:hover {
+      transform: translateY(-.3rem) scale(1.05);
+      box-shadow: 0 2.5rem 3rem $color-black-shadow;
+    }
   }
 }

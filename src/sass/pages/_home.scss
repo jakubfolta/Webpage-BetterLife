@@ -3,6 +3,8 @@
   padding: 25rem 0;
   margin-top: -20vh;
 
+  @include respond(tab-land) { padding: 30rem 0 20rem; }
+
   @include respond(tab-port) {
     margin-top: -17vh;
     padding: 20rem 0;
@@ -43,6 +45,8 @@
   background-color: $color-grey-light-1;
   margin-top: -16vh;
 
+  @include respond(tab-land) { padding: 30rem 0 5rem; }
+
   @include respond(phone) {
     margin-top: -13vh;
     padding: 20rem 0 3rem;
@@ -52,19 +56,16 @@
 .section-stories {
   position: relative;
   padding: 5rem 0;
+
+  @include respond(tab-land) { padding: 3rem 0 1rem; }
 }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
 
-  @include respond(tab-port) {
-    padding: 10rem 0;
-  }
-
-  @include respond(phone) {
-    padding: 5rem 0;
-  }
+  @include respond(tab-land) { padding: 10rem 0; }
+  @include respond(phone) { padding: 5rem 0; }
 }
 
 .book {

@@ -380,7 +380,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
       border-radius: 0.3rem;
@@ -692,8 +692,8 @@ body {
         transform: skewX(0); } }
   .story__shape {
     position: relative;
-    width: 15rem;
-    height: 15rem;
+    width: 16rem;
+    height: 16rem;
     float: left;
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden;
@@ -729,12 +729,18 @@ body {
     opacity: 0;
     transition: all .8s;
     backface-visibility: hidden; }
-  .story:hover .story__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%); }
-  .story:hover .story__img {
-    transform: translateX(-3rem) scale(1);
-    filter: blur(3px) brightness(90%); }
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      .story__caption {
+        transform: translate(-40%, 10%);
+        opacity: 1; } }
+  @media only screen and (min-width: 56.25em) and (hover: hover) {
+    .story:hover .story__caption {
+      opacity: 1;
+      transform: translate(-50%, -50%); } }
+  @media only screen and (min-width: 56.25em) and (hover: hover) {
+    .story:hover .story__img {
+      transform: translateX(-3rem) scale(1);
+      filter: blur(3px) brightness(90%); } }
 
 .footer {
   background-color: #333333;
@@ -798,14 +804,14 @@ body {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      height: 95vh; } }
+      height: 95vh; }
+      @media only screen and (max-width: 37.5em) {
+        .header {
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover; } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -1019,6 +1025,9 @@ body {
   background-color: whitesmoke;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media only screen and (max-width: 75em) {
+    .section-about {
+      padding: 30rem 0 20rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       margin-top: -17vh;
@@ -1042,6 +1051,9 @@ body {
   padding: 25rem 0 5rem;
   background-color: whitesmoke;
   margin-top: -16vh; }
+  @media only screen and (max-width: 75em) {
+    .section-courses {
+      padding: 30rem 0 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-courses {
       margin-top: -13vh;
@@ -1050,11 +1062,14 @@ body {
 .section-stories {
   position: relative;
   padding: 5rem 0; }
+  @media only screen and (max-width: 75em) {
+    .section-stories {
+      padding: 3rem 0 1rem; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     .section-book {
       padding: 10rem 0; } }
   @media only screen and (max-width: 37.5em) {

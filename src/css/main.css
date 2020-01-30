@@ -124,9 +124,10 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2rem; } }
-  .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (hover: hover) {
+    .heading-secondary:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -191,17 +192,17 @@ body {
   border: none;
   cursor: pointer; }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.7);
-    opacity: 0; }
-
-.btn:active {
-  outline: none;
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+@media only screen and (hover: hover) {
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.7);
+      opacity: 0; }
+  .btn:active {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } }
 
 .btn--white {
   background-color: white;
@@ -240,15 +241,15 @@ body {
   border-bottom: 1px solid #54c478;
   transition: all .5s; }
 
-.btn-text:hover {
-  color: white;
-  background-color: #54c478;
-  transform: translateY(-0.5rem);
-  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
-
-.btn-text:active {
-  transform: translateY(-0.2rem);
-  box-shadow: 0.3rem 0.7rem 1rem rgba(0, 0, 0, 0.3); }
+@media only screen and (hover: hover) {
+  .btn-text:hover {
+    color: white;
+    background-color: #54c478;
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+  .btn-text:active {
+    transform: translateY(-0.2rem);
+    box-shadow: 0.3rem 0.7rem 1rem rgba(0, 0, 0, 0.3); } }
 
 .button {
   text-align: center; }

@@ -544,7 +544,7 @@ body {
         margin-bottom: 1rem; } }
 
 .form__radio-input {
-  -webkit-appearance: none; }
+  display: none; }
 
 .form__radio-label {
   font-size: 1.6rem;

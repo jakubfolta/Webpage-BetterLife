@@ -56,12 +56,14 @@
       backface-visibility: hidden;
     }
 
-    &:hover,
-    &:active {
-      color: $color-primary;
-      box-shadow: 0 2rem 3rem $color-black-shadow;
-      background-color: $color-grey-dark-3;
-      transform: rotate(5deg) scale(1.4);
+    @media only screen and (hover: hover) {
+      &:hover,
+      &:active {
+        color: $color-primary;
+        box-shadow: 0 2rem 3rem $color-black-shadow;
+        background-color: $color-grey-dark-3;
+        transform: rotate(5deg) scale(1.4);
+      }
     }
   }
 

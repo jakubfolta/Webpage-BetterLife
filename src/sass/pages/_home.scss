@@ -65,6 +65,7 @@
   background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
 
   @include respond(tab-land) { padding: 10rem 0; }
+
   @include respond(phone) { padding: 5rem 0; }
 }
 

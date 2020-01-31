@@ -485,7 +485,7 @@ body {
       padding: inherit; } }
 
 ::selection {
-  background-color: #54c478;
+  background-color: #071fcf;
   color: white; }
 
 @keyframes moveInLeft {
@@ -555,13 +555,13 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #7dd46e;
+  color: #4459f8;
   display: inline-block;
   letter-spacing: .2rem;
   transition: all .2s; }
   @supports (-webkit-background-clip: text) {
     .heading-secondary {
-      background-image: linear-gradient(to right, #7dd46e, #29b382);
+      background-image: linear-gradient(to right, #4459f8, #06179d);
       -webkit-background-clip: text;
       color: transparent; } }
   @media only screen and (max-width: 56.25em) {
@@ -612,14 +612,16 @@ body {
     .u-margin-top-huge {
       margin-top: 5rem !important; } }
 
+.u-opacity {
+  opacity: .5 !important; }
+
 .bg-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  opacity: .3; }
+  z-index: -1; }
   .bg-video__content {
     width: 100%;
     height: 100%;
@@ -657,10 +659,10 @@ body {
     background-color: white; }
 
 .btn--green {
-  background-color: #29b382;
+  background-color: #06179d;
   color: white; }
   .btn--green::after {
-    background-color: #29b382; }
+    background-color: #06179d; }
 
 .btn::after {
   content: '';
@@ -681,16 +683,16 @@ body {
 .btn-text:link, .btn-text:visited {
   display: inline-block;
   font-size: 1.6rem;
-  color: #54c478;
+  color: #071fcf;
   text-decoration: none;
   padding: .5rem .5rem;
-  border-bottom: 1px solid #54c478;
+  border-bottom: 1px solid #071fcf;
   transition: all .5s; }
 
 @media only screen and (hover: hover) {
   .btn-text:hover {
     color: white;
-    background-color: #54c478;
+    background-color: #071fcf;
     transform: translateY(-0.5rem);
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
   .btn-text:active {
@@ -723,11 +725,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to bottom right, #ffb700, #ff742e); }
+        background-image: linear-gradient(to bottom right, #eaea06, #cc0000); }
       .card__side--back-2 {
-        background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
+        background-image: linear-gradient(to bottom right, #4459f8, #06179d); }
       .card__side--back-3 {
-        background-image: linear-gradient(to bottom right, #299bff, #5543f9); }
+        background-image: linear-gradient(to bottom right, #01e915, #186902); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -738,17 +740,17 @@ body {
     background-size: cover; }
     .card__picture--1 {
       background-image: url(../img/cour.jpg); }
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
         .card__picture--1 {
           background-image: url(../img/cour-large.jpg); } }
     .card__picture--2 {
       background-image: url(../img/cour-2.jpg); }
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
         .card__picture--2 {
           background-image: url(../img/cour-2-large.jpg); } }
     .card__picture--3 {
       background-image: url(../img/cour-3.jpg); }
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
         .card__picture--3 {
           background-image: url(../img/cour-3-large.jpg); } }
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -759,20 +761,20 @@ body {
       .card__picture {
         background-blend-mode: saturation; }
         .card__picture--1 {
-          background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour.jpg); }
-          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+          background-image: linear-gradient(to bottom right, #eaea06, #cc0000), url(../img/cour.jpg); }
+          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
             .card__picture--1 {
-              background-image: linear-gradient(to bottom right, #ffb700, #ff742e), url(../img/cour-large.jpg); } }
+              background-image: linear-gradient(to bottom right, #eaea06, #cc0000), url(../img/cour-large.jpg); } }
         .card__picture--2 {
-          background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2.jpg); }
-          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+          background-image: linear-gradient(to bottom right, #4459f8, #06179d), url(../img/cour-2.jpg); }
+          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
             .card__picture--2 {
-              background-image: linear-gradient(to bottom right, #7dd46e, #29b382), url(../img/cour-2-large.jpg); } }
+              background-image: linear-gradient(to bottom right, #4459f8, #06179d), url(../img/cour-2-large.jpg); } }
         .card__picture--3 {
-          background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3.jpg); }
-          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+          background-image: linear-gradient(to bottom right, #01e915, #186902), url(../img/cour-3.jpg); }
+          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
             .card__picture--3 {
-              background-image: linear-gradient(to bottom right, #299bff, #5543f9), url(../img/cour-3-large.jpg); } } }
+              background-image: linear-gradient(to bottom right, #01e915, #186902), url(../img/cour-3-large.jpg); } } }
   .card__heading {
     text-align: right;
     width: 90%;
@@ -793,11 +795,11 @@ body {
     text-transform: uppercase;
     color: white; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to bottom right, rgba(255, 183, 0, 0.8), rgba(255, 116, 46, 0.8)); }
+      background-image: linear-gradient(to bottom right, rgba(234, 234, 6, 0.8), rgba(204, 0, 0, 0.8)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)); }
+      background-image: linear-gradient(to bottom right, rgba(68, 89, 248, 0.8), rgba(6, 23, 157, 0.8)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to bottom right, rgba(41, 155, 255, 0.8), rgba(85, 67, 249, 0.8)); }
+      background-image: linear-gradient(to bottom right, rgba(1, 233, 21, 0.8), rgba(24, 105, 2, 0.8)); }
   .card__details {
     padding: 3rem; }
   .card__list {
@@ -880,23 +882,23 @@ body {
         width: 33.33333%;
         box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3); } }
     .composition__photo--p1 {
-      left: 0;
-      top: -2rem; }
+      left: -2rem;
+      top: 6rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
           top: .5rem;
           transform: scale(1.2); } }
     .composition__photo--p2 {
       right: 0;
-      top: -1rem; }
+      top: 11rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
           transform: scale(1.3);
           z-index: 200;
           top: -1rem; } }
     .composition__photo--p3 {
-      left: 25%;
-      top: -3rem; }
+      left: 20%;
+      top: 0; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
           left: 0;
@@ -907,7 +909,7 @@ body {
         transform: scale(1.05) translateY(-1rem);
         box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.3);
         z-index: 101;
-        outline: 1.5rem solid #54c478; } }
+        outline: 1.5rem solid #071fcf; } }
   @media only screen and (hover: hover) {
     .composition:hover .composition__photo:not(:hover) {
       transform: scale(0.9);
@@ -928,10 +930,10 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    color: #7dd46e; }
+    color: #4459f8; }
     @supports (-webkit-background-clip: text) {
       .feature-box__icon {
-        background-image: linear-gradient(to right, #7dd46e, #29b382);
+        background-image: linear-gradient(to right, #4459f8, #06179d);
         -webkit-background-clip: text;
         color: transparent; } }
     @media only screen and (max-width: 56.25em) {
@@ -972,9 +974,9 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-    border-bottom: 0.3rem solid #54c478; }
+    border-bottom: 0.3rem solid #071fcf; }
   .form__input:focus:invalid {
-    border-bottom: 0.3rem solid #ff742e; }
+    border-bottom: 0.3rem solid #cc0000; }
 
 .form__label {
   font-size: 1.2rem;
@@ -1015,7 +1017,7 @@ body {
   display: inline-block;
   width: 3rem;
   height: 3rem;
-  border: 5px solid #54c478;
+  border: 5px solid #071fcf;
   border-radius: 50%;
   position: absolute;
   top: -.8rem;
@@ -1029,7 +1031,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #54c478;
+    background-color: #071fcf;
     border-radius: 50%;
     opacity: 0;
     transition: opacity .3s ease; }
@@ -1113,7 +1115,7 @@ body {
     transition: color .3s; }
     @media only screen and (hover: hover) {
       .popup__close:link:hover, .popup__close:visited:hover {
-        color: #54c478; } }
+        color: #071fcf; } }
 
 .story {
   width: 75%;
@@ -1136,6 +1138,16 @@ body {
       padding: 3rem;
       padding-left: 5rem;
       transform: skewX(0); } }
+  .story--1 {
+    margin-left: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .story--1 {
+        margin-left: -5rem; } }
+  .story--2 {
+    margin-right: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .story--2 {
+        margin-right: -5rem; } }
   .story > * {
     transform: skewX(12deg); }
     @media only screen and (max-width: 37.5em) {
@@ -1233,7 +1245,7 @@ body {
     backface-visibility: hidden; }
   @media only screen and (hover: hover) {
     .footer__link:hover, .footer__link:active {
-      color: #54c478;
+      color: #071fcf;
       box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
       background-color: #333333;
       transform: rotate(5deg) scale(1.4); } }
@@ -1250,7 +1262,6 @@ body {
 
 .header {
   height: 70vh;
-  background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero-small.jpg) center/cover;
   position: relative; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
@@ -1261,9 +1272,6 @@ body {
         .header {
           -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } } }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .header {
-      background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/hero.jpg) center/cover; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -1360,7 +1368,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#7dd46e, #29b382);
+  background-image: radial-gradient(#4459f8, #06179d);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
@@ -1415,12 +1423,12 @@ body {
   transition: all .5s ease; }
   @media only screen and (hover: hover) {
     .navigation__link:link:hover, .navigation__link:visited:hover {
-      color: #54c478;
+      color: #071fcf;
       background-position: 100%;
       transform: translate(1rem, -0.5rem);
       box-shadow: -2rem 3rem 5rem rgba(0, 0, 0, 0.3); }
     .navigation__link:link:active, .navigation__link:visited:active {
-      color: #54c478;
+      color: #071fcf;
       transform: translateY(0);
       box-shadow: -1rem 2rem 5rem rgba(0, 0, 0, 0.3); } }
 
@@ -1489,14 +1497,14 @@ body {
 .section-features {
   padding: 20rem 0;
   margin-top: -7%;
-  background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/bet-2.jpg) center/cover;
+  background: linear-gradient(to bottom right, rgba(68, 89, 248, 0.8), rgba(6, 23, 157, 0.8)), url(../img/bet-2.jpg) center/cover;
   transform: skewY(-7deg); }
   @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
     .section-features {
-      background: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url(../img/bet-2-large.jpg) center/cover; } }
+      background: linear-gradient(to bottom right, rgba(68, 89, 248, 0.8), rgba(6, 23, 157, 0.8)), url(../img/bet-2-large.jpg) center/cover; } }
   .section-features > * {
     transform: skewY(7deg); }
 
@@ -1521,7 +1529,8 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to bottom right, #7dd46e, #29b382); }
+  margin-top: -1rem;
+  background-image: linear-gradient(to bottom right, #4459f8, #06179d); }
   @media only screen and (max-width: 75em) {
     .section-book {
       padding: 10rem 0; } }

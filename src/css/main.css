@@ -294,17 +294,17 @@ body {
     background-size: cover; }
     .card__picture--1 {
       background-image: url(../img/cour.jpg); }
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
         .card__picture--1 {
           background-image: url(../img/cour-large.jpg); } }
     .card__picture--2 {
       background-image: url(../img/cour-2.jpg); }
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
         .card__picture--2 {
           background-image: url(../img/cour-2-large.jpg); } }
     .card__picture--3 {
       background-image: url(../img/cour-3.jpg); }
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
         .card__picture--3 {
           background-image: url(../img/cour-3-large.jpg); } }
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -316,17 +316,17 @@ body {
         background-blend-mode: saturation; }
         .card__picture--1 {
           background-image: linear-gradient(to bottom right, #eaea06, #cc0000), url(../img/cour.jpg); }
-          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
             .card__picture--1 {
               background-image: linear-gradient(to bottom right, #eaea06, #cc0000), url(../img/cour-large.jpg); } }
         .card__picture--2 {
           background-image: linear-gradient(to bottom right, #4459f8, #06179d), url(../img/cour-2.jpg); }
-          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
             .card__picture--2 {
               background-image: linear-gradient(to bottom right, #4459f8, #06179d), url(../img/cour-2-large.jpg); } }
         .card__picture--3 {
           background-image: linear-gradient(to bottom right, #01e915, #186902), url(../img/cour-3.jpg); }
-          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+          @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
             .card__picture--3 {
               background-image: linear-gradient(to bottom right, #01e915, #186902), url(../img/cour-3-large.jpg); } } }
   .card__heading {

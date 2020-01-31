@@ -47,7 +47,8 @@
       background-image: url(../img/cour.jpg);
 
       @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-      only screen and (min-width: 120em) {
+              only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                only screen and (min-width: 120em) {
         background-image: url(../img/cour-large.jpg);
       }
     }
@@ -56,7 +57,8 @@
       background-image: url(../img/cour-2.jpg);
 
       @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-      only screen and (min-width: 120em) {
+              only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                only screen and (min-width: 120em) {
         background-image: url(../img/cour-2-large.jpg);
       }
     }
@@ -65,7 +67,8 @@
       background-image: url(../img/cour-3.jpg);
 
       @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-      only screen and (min-width: 120em) {
+              only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                only screen and (min-width: 120em) {
         background-image: url(../img/cour-3-large.jpg);
       }
     }
@@ -86,7 +89,8 @@
           url(../img/cour.jpg);
 
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 120em) {
+                only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                  only screen and (min-width: 120em) {
           background-image: linear-gradient(
           to bottom right,
           $color-secondary-light,
@@ -103,7 +107,8 @@
           url(../img/cour-2.jpg);
 
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 120em) {
+                only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                  only screen and (min-width: 120em) {
           background-image: linear-gradient(
           to bottom right,
           $color-primary-light,
@@ -120,7 +125,8 @@
           url(../img/cour-3.jpg);
 
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 120em) {
+                only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                  only screen and (min-width: 120em) {
           background-image: linear-gradient(
           to bottom right,
           $color-tertiary-light,

@@ -1056,7 +1056,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 120em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 120em) {
     .section-features {
       background: linear-gradient(to bottom right, rgba(68, 89, 248, 0.8), rgba(6, 23, 157, 0.8)), url(../img/bet-2-large.jpg) center/cover; } }
   .section-features > * {

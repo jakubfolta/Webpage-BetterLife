@@ -1,11 +1,5 @@
 .header {
   height: 70vh;
-  background: linear-gradient(
-    to bottom right,
-    rgba($color-primary-light, .8),
-    rgba($color-primary-dark, .8)),
-    url(../img/hero-small.jpg) center/cover;
-
   position: relative;
 
   @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -17,16 +11,6 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
-  }
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-         only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
-         only screen and (min-width: 125em) {
-    background: linear-gradient(
-    to bottom right,
-    rgba($color-primary-light, .8),
-    rgba($color-primary-dark, .8)),
-    url(../img/hero.jpg) center/cover;
   }
 
   &__logo-box {

@@ -62,6 +62,7 @@
 
 .section-book {
   padding: 15rem 0;
+  margin-top: -1rem;
   background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
 
   @include respond(tab-land) { padding: 10rem 0; }

@@ -166,6 +166,9 @@ body {
     .u-margin-top-huge {
       margin-top: 5rem !important; } }
 
+.u-opacity {
+  opacity: .5 !important; }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -433,23 +436,23 @@ body {
         width: 33.33333%;
         box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3); } }
     .composition__photo--p1 {
-      left: 0;
-      top: -2rem; }
+      left: -2rem;
+      top: 6rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
           top: .5rem;
           transform: scale(1.2); } }
     .composition__photo--p2 {
       right: 0;
-      top: -1rem; }
+      top: 11rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
           transform: scale(1.3);
           z-index: 200;
           top: -1rem; } }
     .composition__photo--p3 {
-      left: 25%;
-      top: -3rem; }
+      left: 20%;
+      top: 0; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
           left: 0;
@@ -689,6 +692,16 @@ body {
       padding: 3rem;
       padding-left: 5rem;
       transform: skewX(0); } }
+  .story--1 {
+    margin-left: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .story--1 {
+        margin-left: -5rem; } }
+  .story--2 {
+    margin-right: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .story--2 {
+        margin-right: -5rem; } }
   .story > * {
     transform: skewX(12deg); }
     @media only screen and (max-width: 37.5em) {
@@ -1070,6 +1083,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
+  margin-top: -1rem;
   background-image: linear-gradient(to bottom right, #4459f8, #06179d); }
   @media only screen and (max-width: 75em) {
     .section-book {

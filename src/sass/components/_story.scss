@@ -22,6 +22,21 @@
     transform: skewX(0);
   }
 
+  &--1 {
+    margin-left: 4rem;
+
+    @include respond(tab-port) {
+      margin-left: -5rem;
+    }
+  }
+  &--2 {
+    margin-right: 4rem;
+
+    @include respond(tab-port) {
+      margin-right: -5rem;
+    }
+  }
+
   & > * {
     transform: skewX(12deg);
 

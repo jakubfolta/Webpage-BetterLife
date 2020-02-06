@@ -625,7 +625,7 @@ body {
     transition: all 0.5s cubic-bezier(0.38, 1.4, 0.24, 1.06) 0.4s; }
   .popup__top {
     width: 100%;
-    padding: 3rem 4rem; }
+    padding: 1rem 2rem; }
   .popup__bottom {
     width: 100%; }
   .popup__img {

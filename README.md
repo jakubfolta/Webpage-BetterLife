@@ -4,7 +4,7 @@ Example webpage for personal development company.
 ## Check Here ==> https://jakubfolta.github.io/Webpage-BetterLife/
 
 ## Better Life
-![Webpage](./images/BetterLife.jpg)
+![Webpage](./images/better-life.jpg)
 
 ## Technologies
 * HTML5, CSS3, Sass (7-1 Architecture), NPM

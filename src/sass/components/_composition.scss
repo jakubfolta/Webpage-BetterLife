@@ -22,6 +22,7 @@
       top: 6rem;
 
       @include respond(tab-port) {
+        left: -4%;
         top: .5rem;
         transform: scale(1.2);
       }
@@ -43,7 +44,7 @@
       top: 0;
 
       @include respond(tab-port) {
-        left: 0;
+        left: 4%;
         top: 1.5rem;
         transform: scale(1.1);
       }
